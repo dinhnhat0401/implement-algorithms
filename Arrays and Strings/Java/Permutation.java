@@ -5,6 +5,7 @@ class Permutation {
   static boolean isPermutation(String str1, String str2) {
     if (str1 == null && str2 == null) return true;
     if ((str1 == null && str2 != null) || (str1 != null && str2 == null)) return false;
+    if (str1.length() != str2.length()) return false;
 
     Set<Character> hashTable = new HashSet<>();
     
