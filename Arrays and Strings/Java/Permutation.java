@@ -1,26 +1,37 @@
-import java.util.Set;
-import java.util.HashSet;
+import java.util.Hashtable;
 
 class Permutation {
   static boolean isPermutation(String str1, String str2) {
+    
+    // Need null check since it will return NullPointerException if we try to call length() on a null object
     if (str1 == null && str2 == null) return true;
     if ((str1 == null && str2 != null) || (str1 != null && str2 == null)) return false;
+
+    // One string can't be permutation of another if they aren't equal in length
     if (str1.length() != str2.length()) return false;
 
-    Set<Character> hashTable = new HashSet<>();
-    
+    // Loop throught the array an count number of appearance for each character in the string
+    Hashtable<Character, Integer> hashtable = new Hashtable<>();
     for (int i = 0; i < str1.length(); i++) {
-      hashTable.add(str1.charAt(i));
+      char currentChar = str1.charAt(i);
+      Integer appearance = hashtable.get(currentChar);
+      if (appearance != null) {
+        hashtable.replace(currentChar, appearance + 1);
+      } else {
+        hashtable.put(currentChar, 1);
+      }
     }
 
     for (int i = 0; i < str2.length(); i++) {
-      if (!hashTable.contains(str2.charAt(i))) {
+      char currentChar = str2.charAt(i);
+      Integer appearance = hashtable.get(currentChar);
+      if (appearance == null || appearance == 0) {
         return false;
       }
-      hashTable.remove(str2.charAt(i));
+      hashtable.replace(str2.charAt(i), appearance - 1);
     }
 
-    return hashTable.isEmpty();
+    return true;
   }
 
   static void test(String str1, String str2, boolean expectedResult) {
@@ -31,9 +42,9 @@ class Permutation {
     test(null, null, true);
     test(null, "abc", false);
     test("abc", null, false);
-    test("abcdef", "fbadce", true);
-    test("abcdef", "fbadcegh", false);
-    test("abcdefgh", "fbadce", false);
+    test("abcdeff", "fbadce", false);
+    test("abcdeffff", "ffffbadce", true);
+    test("abcdefffgh", "affbadce", false);
     System.out.println("All test passed");
   }
 }
