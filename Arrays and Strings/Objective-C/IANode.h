@@ -2,15 +2,16 @@
 
 @interface IANode: NSObject
 
-@property (nonatomic, assign) int data;
+@property (nonatomic, assign) NSInteger data;
 @property (nonatomic, strong) IANode *next;
 @property (readonly) NSUInteger hash;
 
-- (id)initWithData:(int)data;
+- (id)initWithData:(NSInteger)data;
 - (BOOL)isEqual:(id)object;
 
 + (void)printLinkedListWithHead:(IANode *)head;
 + (void)removeDupsWithHead:(IANode *)head;
++ (id)initWithDataArray:(NSArray *)dataArray;
 
 @end
 

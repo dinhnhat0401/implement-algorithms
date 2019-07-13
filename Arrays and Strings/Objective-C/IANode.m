@@ -5,7 +5,7 @@
 @synthesize next = _next;
 @synthesize hash = _hash;
 
-- (id)initWithData:(int)data {
+- (id)initWithData:(NSInteger)data {
   self = [super init];
   if (self) {
     _data = data;
@@ -16,6 +16,20 @@
   return self;
 }
 
++ (id)initWithDataArray:(NSArray *)dataArray {
+  if (dataArray.count == 0) return nil;
+
+  IANode *head = [[IANode alloc] initWithData:[[dataArray objectAtIndex:0] integerValue]];
+  IANode *tail = head;
+  for (int i = 1; i < dataArray.count; i++) {
+    IANode *temp = [[IANode alloc] initWithData:[[dataArray objectAtIndex:i] integerValue]];
+    tail.next = temp;
+    tail = temp;
+  }
+
+  return head;
+}
+
 + (void)printLinkedListWithHead:(IANode *)head {
   if (head == nil) return;  
   
@@ -23,7 +37,7 @@
 
   IANode *current = head;
   while(current != nil) {
-    printf("%d ", current.data);
+    printf("%ld ", current.data);
     current = current.next;
   }
 
@@ -42,7 +56,6 @@
     if ([dataSet containsObject:current.next]) {
       current.next = current.next.next;
     } else {
-      printf("Doesn't contain: %d\n", current.data);
       [dataSet addObject:current.next];
     }
     current = current.next;
