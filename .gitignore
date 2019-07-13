@@ -172,4 +172,4 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-.o
+*.o
