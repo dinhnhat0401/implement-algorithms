@@ -38,6 +38,29 @@ IANode* partition(IANode *head, int value) {
   return head1;
 }
 
+IANode* partition2(IANode *node, int value) {
+  if (node == nil) return nil;
+  
+  IANode *head = node;
+  IANode *tail = node;
+
+  IANode *current = head;
+  while (current != nil) {
+    IANode *next = current.next;
+    if (current.data < value) {
+      current.next = head;
+      head = current;
+    } else {
+      tail.next = current;
+      tail = current;
+    }
+    current = next;
+  }
+
+  tail.next = nil;
+  return head;
+}
+
 int main(int argc, char *argv[]) {
   IANode *head = [[IANode alloc] initWithData:3];
   IANode *node2 = [[IANode alloc] initWithData:5];
@@ -54,7 +77,7 @@ int main(int argc, char *argv[]) {
   node6.next = node7;
 
   [IANode printLinkedListWithHead:head];
-  IANode *newHead = partition(head, 5);
+  IANode *newHead = partition2(head, 5);
   [IANode printLinkedListWithHead:newHead];
 }
 
