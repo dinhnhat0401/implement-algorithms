@@ -1,49 +1,50 @@
 import java.util.HashSet;
-import java.util.Dequeue;
+import java.util.Deque;
+import java.util.List;
+import java.util.LinkedList;
 import java.util.Set;
 
 public class Graph {
-  List<Node<T>> nodes;
+  List<Node> nodes;
 
   // BFS
-  boolean routeBetweenNodes(Node<T> node1, Node<T> node2) {
-    Set<Node<T>> visited = new HashSet<>();
-    Dequeue<Node<T>> queue = new Dequeue<>();
+  boolean routeBetweenNodes(Node node1, Node node2) {
+    Set<Node> visited = new HashSet<>();
+    Deque<Node> queue = new LinkedList<>();
 
     // Add source node to queue
     queue.addLast(node1);
 
     // loop til queue is empty = we searched whole graph
     while(!queue.isEmpty()) {
-      Node<T> tmp = queue.removeFirst();
-      visited.addObject(tmp);
-      tmp.childs.stream().forEach((n) -> {
-        if (n == node2) return true; // Found it
-        if (!visited.containsObject(n)) {
+      Node tmp = queue.removeFirst();
+      if (tmp == node2) return true; // Found it
+      visited.add(tmp);
+      for (Node n : tmp.getAdjacent()) {
+        if (!visited.contains(n)) {
           queue.addLast(n);
         }
-      });
+      }
     }
 
     return false; // Not found, searched whole graph though 
-  }
+  } 
 }
 
-class Node<T> {
-  private T data;
+class Node {
   private String name;
-  private List<Node<T>> childs;
+  private List<Node> adjacent;
 
   public Node(String name) {
-    this.name = name;    
+    this.name = name;
   }
 
-  public void setChilds(List<Node<T>> childs) {
-    this.childs = childs;
+  public void setAdjacent(List<Node> adjacent) {
+    this.adjacent = adjacent;
   }
 
-  public List<Node<T>> getChilds() {
-    return this.childs;
+  public List<Node> getAdjacent() {
+    return this.adjacent;
   }
 }
 
