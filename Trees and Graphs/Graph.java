@@ -79,6 +79,11 @@ public class Graph {
      final Path inputPath = Paths.get(args[0]);
      Graph g = new Graph(inputPath);
      g.printGraph();
+     Node node1 = g.nodes.get(1);
+     Node node7 = g.nodes.get(7);
+     System.out.println("node1 to node7 ->" + g.routeBetweenNodes(node1, node7));
+     System.out.println("node5 to node0 -> " + g.routeBetweenNodes(g.nodes.get(5), g.nodes.get(0)));
+     System.out.println("node0 to node5 -> " + g.routeBetweenNodes(g.nodes.get(0), g.nodes.get(5)));
   } 
 }
 
