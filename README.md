@@ -23,4 +23,8 @@ gcc -c IANode.m
 gcc -o RemoveDups.o IANode.o  RemoveDups.m -framework Foundation
 ./RemoveDups
 ```
+
+### Implemented algorithms
+
+1. Topological sort
  
