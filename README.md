@@ -32,3 +32,5 @@ Approach 1: find the source nodes, remove them from the Graph
 Approach 2: use DFS to find the destination nodes, remove them from the Graph if no other nodes refer to them. Add the node to a Stack.
 Traverse stack to get the nodes
 
+2. Find longest palindrome
+TODO: give examples, memoization
