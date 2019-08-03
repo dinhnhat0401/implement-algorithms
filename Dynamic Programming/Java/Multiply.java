@@ -10,7 +10,9 @@ class Multiply {
   }
 
   public static int multiply(int A, int B) {
-    return multiply(A, B, 0, 0);
+    if (A < 0 || B < 0) return -1;
+
+    return A > B ? multiply(A, B, 0, 0) : multiply(B, A, 0, 0);
   }
 
   public static void main(String [] args) {
