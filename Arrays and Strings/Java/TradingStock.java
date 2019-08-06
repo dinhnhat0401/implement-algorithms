@@ -22,6 +22,7 @@ public class TradingStock {
         // Your code here!
         int[] arr = {10, 7, 5, 8, 11, 9};
         System.out.println(getMaxProfit(arr, 6));
+        System.out.println(getMaxProfitV2(arr, 6));
     }
     
     static int getMaxProfit(int[] stockPrices, int count) {
@@ -37,6 +38,18 @@ public class TradingStock {
         result = result > tmp ? result : tmp;
       }
     
+      return result;
+    }
+    
+    static int getMaxProfitV2(int[] stockPrices, int count) {
+      int max = 0;
+      int result = 0;
+      for (int i = count - 2; i >= 0; i--) {
+        max = max > stockPrices[i] ? max : stockPrices[i];
+        int profit = max - stockPrices[i];
+        result = result > profit ? result : profit;
+      }
+
       return result;
     }
 }
