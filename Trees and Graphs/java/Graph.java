@@ -3,17 +3,19 @@ import java.nio.charset.Charset;
 import java.nio.file.*;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Deque;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Set;
 
 public class Graph {
   private static int time = 0;
 
   private int size;
-  private List<Node> nodes = new ArrayList<>();
+  private Map<Integer, Node> nodes = new HashMap<>();
 
   public Graph(final Path path) {
     try (final BufferedReader br = Files.newBufferedReader(path, Charset.forName("UTF-8"));) {
@@ -24,7 +26,7 @@ public class Graph {
           this.size = Integer.parseInt(data);
           for (int i = 0; i < this.size; i++) {
             Node node = new Node(i);
-            this.nodes.add(node);
+            this.nodes.put(i, node);
           }
           firstLine = false;
           continue;
@@ -45,10 +47,10 @@ public class Graph {
   }
 
   public void printGraph() {
-    this.nodes.stream().forEach((node) -> {
-      System.out.print(node.getName() + " -> ");
+    this.nodes.values().stream().forEach((node) -> {
+      System.out.print(node.getId() + " -> ");
       node.getAdjacent().stream().forEach((adjNode) -> {
-        System.out.print(adjNode.getName() + ",");
+        System.out.print(adjNode.getId() + ",");
       });
       System.out.print("\n");
     });
@@ -78,13 +80,13 @@ public class Graph {
   }
 
   void DFS() {
-    for (Node n : this.nodes) {
+    for (Node n : this.nodes.values()) {
       n.setPre(null);
       n.setColor(Color.WHITE);
     }
 
     time = 0;
-    for (Node n : this.nodes) {
+    for (Node n : this.nodes.values()) {
       if (n.getColor() == Color.WHITE) {
         DFSVisit(n);
       }
@@ -104,7 +106,7 @@ public class Graph {
     time = time + 1;
     n.setF(time);
     n.setColor(Color.BLACK);
-    System.out.println("Node " + n.getName() + ": discorvered=" + n.getD() + ", finished = " + n.getF());
+    System.out.println("Node " + n.getId() + ": discorvered=" + n.getD() + ", finished = " + n.getF());
   }
 
   public static void main(String [] args) {
@@ -126,20 +128,20 @@ enum Color {
 }
 
 class Node {
-  private int name;
+  private int id;
   private List<Node> adjacent;
   private Node pre; // predecessor
   private Color color;
   private int d;    // discorvered
   private int f;    // finished
 
-  public Node(int name) {
-    this.name = name;
+  public Node(int id) {
+    this.id = id;
     adjacent = new ArrayList<>();
   }
 
-  public int getName() { return this.name; }
-  public void setName(int name) { this.name = name; }
+  public int getId() { return this.id; }
+  public void setId(int id) { this.id = id; }
 
   public void setAdjacent(List<Node> adjacent) {
     this.adjacent = adjacent;
