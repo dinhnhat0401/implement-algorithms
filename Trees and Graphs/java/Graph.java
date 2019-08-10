@@ -44,9 +44,9 @@ public class Graph {
 
   public void printGraph() {
     this.nodes.stream().forEach((node) -> {
-      System.out.print(node.name + " -> ");
+      System.out.print(node.getName() + " -> ");
       node.getAdjacent().stream().forEach((adjNode) -> {
-        System.out.print(adjNode.name + ",");
+        System.out.print(adjNode.getName() + ",");
       });
       System.out.print("\n");
     });
@@ -87,14 +87,25 @@ public class Graph {
   } 
 }
 
+enum Color {
+  WHITE, GRAY, BLACK;
+}
+
 class Node {
-  int name;
-  List<Node> adjacent;
+  private int name;
+  private List<Node> adjacent;
+  private Node pre; // predecessor
+  private Color color;
+  private int d;    // discorvered
+  private int f;    // finished
 
   public Node(int name) {
     this.name = name;
     adjacent = new ArrayList<>();
   }
+
+  public int getName() { return this.name; }
+  public void setName(int name) { this.name = name; }
 
   public void setAdjacent(List<Node> adjacent) {
     this.adjacent = adjacent;
@@ -103,5 +114,17 @@ class Node {
   public List<Node> getAdjacent() {
     return this.adjacent;
   }
+
+  public Node getPre() { return this.pre; }
+  public void setPre(Node pre) { this.pre = pre; }
+
+  public Color getColor() { return this.color; }
+  public void setColor(Color color) { this.color = color; }
+
+  public int getD() { return this.d; }
+  public void setD(int d) { this.d = d; }
+
+  public int getF() { return this.f; }
+  public void setF(int f) { this.f = f; }
 }
 
