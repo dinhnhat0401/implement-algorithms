@@ -10,8 +10,10 @@ import java.util.LinkedList;
 import java.util.Set;
 
 public class Graph {
-  int size;
-  List<Node> nodes = new ArrayList<>();
+  private static int time = 0;
+
+  private int size;
+  private List<Node> nodes = new ArrayList<>();
 
   public Graph(final Path path) {
     try (final BufferedReader br = Files.newBufferedReader(path, Charset.forName("UTF-8"));) {
@@ -75,6 +77,36 @@ public class Graph {
     return false; // Not found, searched whole graph though 
   }
 
+  void DFS() {
+    for (Node n : this.nodes) {
+      n.setPre(null);
+      n.setColor(Color.WHITE);
+    }
+
+    time = 0;
+    for (Node n : this.nodes) {
+      if (n.getColor() == Color.WHITE) {
+        DFSVisit(n);
+      }
+    }
+  }
+
+  void DFSVisit(Node n) {
+    n.setColor(Color.GRAY);
+    time = time + 1;
+    n.setD(time);
+    for (Node node : n.getAdjacent()) {
+      if (node.getColor() == Color.WHITE) {
+        node.setPre(n);
+        DFSVisit(node);
+      }
+    }
+    time = time + 1;
+    n.setF(time);
+    n.setColor(Color.BLACK);
+    System.out.println("Node " + n.getName() + ": discorvered=" + n.getD() + ", finished = " + n.getF());
+  }
+
   public static void main(String [] args) {
      final Path inputPath = Paths.get(args[0]);
      Graph g = new Graph(inputPath);
@@ -84,6 +116,8 @@ public class Graph {
      System.out.println("node1 to node7 ->" + g.routeBetweenNodes(node1, node7));
      System.out.println("node5 to node0 -> " + g.routeBetweenNodes(g.nodes.get(5), g.nodes.get(0)));
      System.out.println("node0 to node5 -> " + g.routeBetweenNodes(g.nodes.get(0), g.nodes.get(5)));
+
+     g.DFS();
   } 
 }
 
