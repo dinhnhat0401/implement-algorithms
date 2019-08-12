@@ -35,4 +35,4 @@ Traverse stack to get the nodes
 2. Find longest palindrome
 TODO: give examples, memoization
 
-
+3. LRU with Swift/Objective-C
