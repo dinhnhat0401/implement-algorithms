@@ -174,3 +174,6 @@ iOSInjectionProject/
 
 *.o
 *.DS_Store
+
+*.idea
+*.iml
