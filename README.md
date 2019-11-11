@@ -29,6 +29,6 @@ gcc -o RemoveDups.o IANode.o  RemoveDups.m -framework Foundation
 
 ### Resources
 
-leetcode.com
-atcoder.jp
-https://medium.com/leetcode-patterns
+- leetcode.com
+- atcoder.jp
+- https://medium.com/leetcode-patterns
