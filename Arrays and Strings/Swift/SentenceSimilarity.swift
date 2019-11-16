@@ -4,7 +4,10 @@
 // 2. Time complexity: O(n + 2m) with n = words1.count, m = pairs.count with hashmap
 // or O(nm) without hashmap
 // Have no idea why the first method is faster in term of runtime on Leetcode
-
+// Follow up question: what happen in case similarity is transitive
+// if "great" ~ "fine", "fine" ~ "ok" => "great" ~ "fine" ~ "ok"
+// in this case, instead of a hashmap, we need to store pairs in a undirected graph
+// each time we want to check, dfs
  
 class SentenceSimilarity {
     func areSentencesSimilar(_ words1: [String], _ words2: [String], _ pairs: [[String]]) -> Bool {
