@@ -18,6 +18,7 @@
 		841D4792238038D20044534B /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4791238038D20044534B /* Graph.swift */; };
 		841D47942380399F0044534B /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D47932380399F0044534B /* Node.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
+		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		841D4791238038D20044534B /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		841D47932380399F0044534B /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
+		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		841D4752238038330044534B = {
 			isa = PBXGroup;
 			children = (
+				84EA7BC8238132880065CAD0 /* Leetcode */,
 				841D475D238038330044534B /* DataStructure */,
 				841D4774238038380044534B /* DataStructureTests */,
 				841D477F238038380044534B /* DataStructureUITests */,
@@ -105,7 +108,7 @@
 		841D475D238038330044534B /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				84EA7BC8238132880065CAD0 /* Leetcode */,
+				84EA7BCB238150270065CAD0 /* UnionFind */,
 				841D478E2380387E0044534B /* Graph */,
 				841D475E238038330044534B /* AppDelegate.swift */,
 				841D4760238038330044534B /* SceneDelegate.swift */,
@@ -151,6 +154,14 @@
 				84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */,
 			);
 			path = Leetcode;
+			sourceTree = "<group>";
+		};
+		84EA7BCB238150270065CAD0 /* UnionFind */ = {
+			isa = PBXGroup;
+			children = (
+				84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */,
+			);
+			path = UnionFind;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 			files = (
 				841D4763238038330044534B /* ViewController.swift in Sources */,
 				841D475F238038330044534B /* AppDelegate.swift in Sources */,
+				84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */,
 				841D47942380399F0044534B /* Node.swift in Sources */,
 				841D4761238038330044534B /* SceneDelegate.swift in Sources */,
 				841D4792238038D20044534B /* Graph.swift in Sources */,
