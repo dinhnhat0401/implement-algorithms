@@ -1,62 +1,97 @@
 import Foundation
 
-class Heap {
-  
-  init(_ arr: [Int]) {
-    self.arr = arr
-    self.heapSize = arr.count
-  }
+struct Heap<T> where T: Comparable {
 
-  func buildMaxHeap() {
-    for i in stride(from: heapSize/2, through: 0, by: -1) {
-      maxHeapify(i)
+    init(_ nodes: [T] = [], sort: @escaping (T, T) -> Bool) {
+        self.nodes = nodes
+        self.heapSize = nodes.count
+        self.sort = sort
+        buildHeap()
     }
-  }
-  
-  func maxHeapify(_ i: Int) {
-    var i = i
-    while i < heapSize {
-      let l = left(i)
-      let r = right(i)
-      var largest = i
 
-      if l < heapSize && arr[l] > arr[i] {
-        largest = l
-      }
-
-      if r < heapSize && arr[r] > arr[largest] {
-        largest = r
-      }
-
-      if largest == i {
-        break
-      }
-
-      arr.swapAt(largest, i)
-      i = largest
+    mutating func extract() -> T {
+        nodes.swapAt(0, heapSize - 1)
+        heapSize -= 1
+        return nodes[heapSize + 1]
     }
-  }
 
-  func heapSort() {
-    while heapSize > 0 {
-      arr.swapAt(0, heapSize - 1)
-      heapSize -= 1
-      maxHeapify(0)
+    mutating func add(e: T) {
+        if heapSize == nodes.count {
+            nodes.append(e)
+        } else {
+            nodes[heapSize] = e
+        }
+        shiftUp(heapSize)
+        heapSize += 1
     }
-  }
 
-  // MARK: - private methods
+    mutating func heapSort() {
+        while heapSize > 0 {
+            nodes.swapAt(0, heapSize - 1)
+            heapSize -= 1
+            shiftDown(0)
+        }
+    }
 
-  var arr: [Int]
-  private var heapSize: Int
+    // MARK: - private methods
 
-  // MARK: - private functions
+    var nodes: [T]
+    private var heapSize: Int
+    private var sort: (T, T) -> Bool
 
-  private func left(_ i: Int) -> Int {
-    return 2 * i + 1
-  }
+    // MARK: - private functions
 
-  private func right(_ i: Int) -> Int {
-    return 2 * i + 2
-  }
+    private func left(_ i: Int) -> Int {
+        return 2 * i + 1
+    }
+
+    private func right(_ i: Int) -> Int {
+        return 2 * i + 2
+    }
+
+    private func parent(_ i: Int) -> Int {
+        return i/2
+    }
+
+    private mutating func buildHeap() {
+        for i in stride(from: heapSize/2, through: 0, by: -1) {
+            shiftDown(i)
+        }
+    }
+
+    private mutating func shiftDown(_ i: Int) {
+        var i = i
+        while i < heapSize {
+            let l = left(i)
+            let r = right(i)
+            var swap = i
+
+            if l < heapSize && sort(nodes[l], nodes[i]) {
+                swap = l
+            }
+
+            if r < heapSize && sort(nodes[r], nodes[swap]) {
+                swap = r
+            }
+
+            if swap == i {
+                break
+            }
+
+            nodes.swapAt(swap, i)
+            i = swap
+        }
+    }
+
+    private mutating func shiftUp(_ i: Int) {
+        var i = i
+        while i > 0 {
+            let p = parent(i)
+            if sort(nodes[i], nodes[p]) {
+                nodes.swapAt(i, p)
+            }
+
+            i = p
+        }
+    }
 }
