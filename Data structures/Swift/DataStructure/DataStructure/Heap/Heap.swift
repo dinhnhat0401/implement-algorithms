@@ -12,7 +12,8 @@ struct Heap<T> where T: Comparable {
     mutating func extract() -> T {
         nodes.swapAt(0, heapSize - 1)
         heapSize -= 1
-        return nodes[heapSize + 1]
+        shiftDown(0)
+        return nodes[heapSize]
     }
 
     mutating func add(e: T) {
@@ -21,8 +22,8 @@ struct Heap<T> where T: Comparable {
         } else {
             nodes[heapSize] = e
         }
-        shiftUp(heapSize)
         heapSize += 1
+        shiftUp(heapSize - 1)
     }
 
     mutating func heapSort() {
@@ -36,7 +37,7 @@ struct Heap<T> where T: Comparable {
     // MARK: - private methods
 
     var nodes: [T]
-    private var heapSize: Int
+    var heapSize: Int
     private var sort: (T, T) -> Bool
 
     // MARK: - private functions
@@ -50,7 +51,7 @@ struct Heap<T> where T: Comparable {
     }
 
     private func parent(_ i: Int) -> Int {
-        return i/2
+        return (i - 1)/2
     }
 
     private mutating func buildHeap() {

@@ -28,5 +28,7 @@ class ViewController: UIViewController {
         heap2.add(e: 119)
         heap2.add(e: 1)
         print(heap2.nodes)
+
+        Solution().test()
     }
 }
