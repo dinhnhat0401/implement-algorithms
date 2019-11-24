@@ -22,6 +22,7 @@
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
 		84EA7BD423895BDD0065CAD0 /* MergeKSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD323895BDD0065CAD0 /* MergeKSortedLists.swift */; };
 		84EA7BD6238A7BCB0065CAD0 /* MaximumTreeDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD5238A7BCA0065CAD0 /* MaximumTreeDepth.swift */; };
+		84EA7BD8238A99C20065CAD0 /* InvertBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD7238A99C20065CAD0 /* InvertBinaryTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		84EA7BD323895BDD0065CAD0 /* MergeKSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeKSortedLists.swift; sourceTree = "<group>"; };
 		84EA7BD5238A7BCA0065CAD0 /* MaximumTreeDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumTreeDepth.swift; sourceTree = "<group>"; };
+		84EA7BD7238A99C20065CAD0 /* InvertBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertBinaryTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */,
 				84EA7BD323895BDD0065CAD0 /* MergeKSortedLists.swift */,
 				84EA7BD5238A7BCA0065CAD0 /* MaximumTreeDepth.swift */,
+				84EA7BD7238A99C20065CAD0 /* InvertBinaryTree.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				841D4761238038330044534B /* SceneDelegate.swift in Sources */,
 				84EA7BD423895BDD0065CAD0 /* MergeKSortedLists.swift in Sources */,
 				841D4792238038D20044534B /* Graph.swift in Sources */,
+				84EA7BD8238A99C20065CAD0 /* InvertBinaryTree.swift in Sources */,
 				84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
