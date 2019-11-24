@@ -6,17 +6,6 @@
 //  Copyright © 2019 Đinh Văn Nhật. All rights reserved.
 //
 
-class TreeNode {
-    public var val: Int
-    public var left: TreeNode?
-    public var right: TreeNode?
-    public init(_ val: Int) {
-        self.val = val
-        self.left = nil
-        self.right = nil
-    }
-}
-
 class MaximumTreeDepth {
     // recursive solution
     // Since we need to visit each node only once, the time complexity is O(N)
