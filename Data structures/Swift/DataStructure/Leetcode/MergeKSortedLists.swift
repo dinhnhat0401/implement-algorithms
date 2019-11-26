@@ -22,7 +22,7 @@ extension ListNode: Comparable {
     }
 }
 
-class Solution {
+class MergeKSortedLists {
     func test() {
         var lists = [ListNode?]()
         let list1 = ListNode(1)
@@ -48,14 +48,14 @@ class Solution {
         var heap = Heap<ListNode>(sort: <)
         for list in lists {
             if let list = list {
-                heap.add(e: list)
+                heap.add(list)
             }
         }
 
         while heap.heapSize > 0 {
             let e = heap.extract()
             if let next = e.next {
-                heap.add(e: next)
+                heap.add(next)
             }
             if head == nil {
                 head = e

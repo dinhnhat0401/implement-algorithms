@@ -9,6 +9,10 @@ struct Heap<T> where T: Comparable {
         buildHeap()
     }
 
+    func peek() -> T {
+        return nodes[0]
+    }
+
     mutating func extract() -> T {
         nodes.swapAt(0, heapSize - 1)
         heapSize -= 1
@@ -16,7 +20,7 @@ struct Heap<T> where T: Comparable {
         return nodes[heapSize]
     }
 
-    mutating func add(e: T) {
+    mutating func add(_ e: T) {
         if heapSize == nodes.count {
             nodes.append(e)
         } else {
