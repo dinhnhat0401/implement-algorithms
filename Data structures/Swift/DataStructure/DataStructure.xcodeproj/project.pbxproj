@@ -26,6 +26,7 @@
 		84EA7BDB238AC7A30065CAD0 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BDA238AC7A30065CAD0 /* TreeNode.swift */; };
 		84EA7BDD238D3B410065CAD0 /* MeetingRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BDC238D3B410065CAD0 /* MeetingRooms.swift */; };
 		84EA7BDF238D63050065CAD0 /* HeapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BDE238D63050065CAD0 /* HeapTest.swift */; };
+		84EA7BE123936AAF0065CAD0 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BE023936AAF0065CAD0 /* TicTacToe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		84EA7BDA238AC7A30065CAD0 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		84EA7BDC238D3B410065CAD0 /* MeetingRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRooms.swift; sourceTree = "<group>"; };
 		84EA7BDE238D63050065CAD0 /* HeapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTest.swift; sourceTree = "<group>"; };
+		84EA7BE023936AAF0065CAD0 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				84EA7BD5238A7BCA0065CAD0 /* MaximumTreeDepth.swift */,
 				84EA7BD7238A99C20065CAD0 /* InvertBinaryTree.swift */,
 				84EA7BDC238D3B410065CAD0 /* MeetingRooms.swift */,
+				84EA7BE023936AAF0065CAD0 /* TicTacToe.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				841D4763238038330044534B /* ViewController.swift in Sources */,
 				841D475F238038330044534B /* AppDelegate.swift in Sources */,
 				84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */,
+				84EA7BE123936AAF0065CAD0 /* TicTacToe.swift in Sources */,
 				84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */,
 				84EA7BDF238D63050065CAD0 /* HeapTest.swift in Sources */,
 				84EA7BD6238A7BCB0065CAD0 /* MaximumTreeDepth.swift in Sources */,
