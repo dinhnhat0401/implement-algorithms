@@ -27,6 +27,8 @@
 		84EA7BDD238D3B410065CAD0 /* MeetingRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BDC238D3B410065CAD0 /* MeetingRooms.swift */; };
 		84EA7BDF238D63050065CAD0 /* HeapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BDE238D63050065CAD0 /* HeapTest.swift */; };
 		84EA7BE123936AAF0065CAD0 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BE023936AAF0065CAD0 /* TicTacToe.swift */; };
+		84EA7BE62393AD8A0065CAD0 /* LengthOfLongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BE52393AD8A0065CAD0 /* LengthOfLongestSubstring.swift */; };
+		84EA7BE823952E6E0065CAD0 /* FourSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BE723952E6D0065CAD0 /* FourSum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		84EA7BDC238D3B410065CAD0 /* MeetingRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRooms.swift; sourceTree = "<group>"; };
 		84EA7BDE238D63050065CAD0 /* HeapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTest.swift; sourceTree = "<group>"; };
 		84EA7BE023936AAF0065CAD0 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
+		84EA7BE52393AD8A0065CAD0 /* LengthOfLongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthOfLongestSubstring.swift; sourceTree = "<group>"; };
+		84EA7BE723952E6D0065CAD0 /* FourSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 				84EA7BD7238A99C20065CAD0 /* InvertBinaryTree.swift */,
 				84EA7BDC238D3B410065CAD0 /* MeetingRooms.swift */,
 				84EA7BE023936AAF0065CAD0 /* TicTacToe.swift */,
+				84EA7BE52393AD8A0065CAD0 /* LengthOfLongestSubstring.swift */,
+				84EA7BE723952E6D0065CAD0 /* FourSum.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 				84EA7BDD238D3B410065CAD0 /* MeetingRooms.swift in Sources */,
 				841D4763238038330044534B /* ViewController.swift in Sources */,
 				841D475F238038330044534B /* AppDelegate.swift in Sources */,
+				84EA7BE823952E6E0065CAD0 /* FourSum.swift in Sources */,
 				84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */,
 				84EA7BE123936AAF0065CAD0 /* TicTacToe.swift in Sources */,
 				84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */,
@@ -348,6 +355,7 @@
 				84EA7BD423895BDD0065CAD0 /* MergeKSortedLists.swift in Sources */,
 				841D4792238038D20044534B /* Graph.swift in Sources */,
 				84EA7BD8238A99C20065CAD0 /* InvertBinaryTree.swift in Sources */,
+				84EA7BE62393AD8A0065CAD0 /* LengthOfLongestSubstring.swift in Sources */,
 				84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */,
 				84EA7BDB238AC7A30065CAD0 /* TreeNode.swift in Sources */,
 			);
