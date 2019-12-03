@@ -29,6 +29,10 @@
 		84EA7BE123936AAF0065CAD0 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BE023936AAF0065CAD0 /* TicTacToe.swift */; };
 		84EA7BE62393AD8A0065CAD0 /* LengthOfLongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BE52393AD8A0065CAD0 /* LengthOfLongestSubstring.swift */; };
 		84EA7BE823952E6E0065CAD0 /* FourSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BE723952E6D0065CAD0 /* FourSum.swift */; };
+		84EA7BEB23967AC40065CAD0 /* RabinKarp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BEA23967AC40065CAD0 /* RabinKarp.swift */; };
+		84EA7BED23967DCA0065CAD0 /* RollingHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BEC23967DCA0065CAD0 /* RollingHash.swift */; };
+		84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BEE23967F3D0065CAD0 /* KMP.swift */; };
+		84EA7BF12396A0A90065CAD0 /* GroupAnagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF02396A0A90065CAD0 /* GroupAnagrams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		84EA7BE023936AAF0065CAD0 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
 		84EA7BE52393AD8A0065CAD0 /* LengthOfLongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthOfLongestSubstring.swift; sourceTree = "<group>"; };
 		84EA7BE723952E6D0065CAD0 /* FourSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSum.swift; sourceTree = "<group>"; };
+		84EA7BEA23967AC40065CAD0 /* RabinKarp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabinKarp.swift; sourceTree = "<group>"; };
+		84EA7BEC23967DCA0065CAD0 /* RollingHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingHash.swift; sourceTree = "<group>"; };
+		84EA7BEE23967F3D0065CAD0 /* KMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMP.swift; sourceTree = "<group>"; };
+		84EA7BF02396A0A90065CAD0 /* GroupAnagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAnagrams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		841D475D238038330044534B /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				84EA7BE9239679D00065CAD0 /* Hashtable */,
 				84EA7BD9238AC79A0065CAD0 /* Tree */,
 				84EA7BD023891A0B0065CAD0 /* Heap */,
 				84EA7BCB238150270065CAD0 /* UnionFind */,
@@ -181,6 +190,7 @@
 				84EA7BE023936AAF0065CAD0 /* TicTacToe.swift */,
 				84EA7BE52393AD8A0065CAD0 /* LengthOfLongestSubstring.swift */,
 				84EA7BE723952E6D0065CAD0 /* FourSum.swift */,
+				84EA7BF02396A0A90065CAD0 /* GroupAnagrams.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -208,6 +218,16 @@
 				84EA7BDA238AC7A30065CAD0 /* TreeNode.swift */,
 			);
 			path = Tree;
+			sourceTree = "<group>";
+		};
+		84EA7BE9239679D00065CAD0 /* Hashtable */ = {
+			isa = PBXGroup;
+			children = (
+				84EA7BEA23967AC40065CAD0 /* RabinKarp.swift */,
+				84EA7BEC23967DCA0065CAD0 /* RollingHash.swift */,
+				84EA7BEE23967F3D0065CAD0 /* KMP.swift */,
+			);
+			path = Hashtable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,8 +361,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EA7BEB23967AC40065CAD0 /* RabinKarp.swift in Sources */,
 				84EA7BDD238D3B410065CAD0 /* MeetingRooms.swift in Sources */,
 				841D4763238038330044534B /* ViewController.swift in Sources */,
+				84EA7BED23967DCA0065CAD0 /* RollingHash.swift in Sources */,
 				841D475F238038330044534B /* AppDelegate.swift in Sources */,
 				84EA7BE823952E6E0065CAD0 /* FourSum.swift in Sources */,
 				84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */,
@@ -350,7 +372,9 @@
 				84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */,
 				84EA7BDF238D63050065CAD0 /* HeapTest.swift in Sources */,
 				84EA7BD6238A7BCB0065CAD0 /* MaximumTreeDepth.swift in Sources */,
+				84EA7BF12396A0A90065CAD0 /* GroupAnagrams.swift in Sources */,
 				841D47942380399F0044534B /* Node.swift in Sources */,
+				84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */,
 				841D4761238038330044534B /* SceneDelegate.swift in Sources */,
 				84EA7BD423895BDD0065CAD0 /* MergeKSortedLists.swift in Sources */,
 				841D4792238038D20044534B /* Graph.swift in Sources */,
