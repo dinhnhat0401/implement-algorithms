@@ -34,6 +34,7 @@
 		84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BEE23967F3D0065CAD0 /* KMP.swift */; };
 		84EA7BF12396A0A90065CAD0 /* GroupAnagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF02396A0A90065CAD0 /* GroupAnagrams.swift */; };
 		84EA7BF32397F7A00065CAD0 /* BinaryTreeInorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF22397F7A00065CAD0 /* BinaryTreeInorderTraversal.swift */; };
+		84EA7BF5239A7F600065CAD0 /* RepeatedDNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF4239A7F600065CAD0 /* RepeatedDNA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		84EA7BEE23967F3D0065CAD0 /* KMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMP.swift; sourceTree = "<group>"; };
 		84EA7BF02396A0A90065CAD0 /* GroupAnagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAnagrams.swift; sourceTree = "<group>"; };
 		84EA7BF22397F7A00065CAD0 /* BinaryTreeInorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BinaryTreeInorderTraversal.swift; path = Leetcode/BinaryTreeInorderTraversal.swift; sourceTree = SOURCE_ROOT; };
+		84EA7BF4239A7F600065CAD0 /* RepeatedDNA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedDNA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				84EA7BE52393AD8A0065CAD0 /* LengthOfLongestSubstring.swift */,
 				84EA7BE723952E6D0065CAD0 /* FourSum.swift */,
 				84EA7BF02396A0A90065CAD0 /* GroupAnagrams.swift */,
+				84EA7BF4239A7F600065CAD0 /* RepeatedDNA.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			files = (
 				84EA7BEB23967AC40065CAD0 /* RabinKarp.swift in Sources */,
 				84EA7BDD238D3B410065CAD0 /* MeetingRooms.swift in Sources */,
+				84EA7BF5239A7F600065CAD0 /* RepeatedDNA.swift in Sources */,
 				841D4763238038330044534B /* ViewController.swift in Sources */,
 				84EA7BED23967DCA0065CAD0 /* RollingHash.swift in Sources */,
 				841D475F238038330044534B /* AppDelegate.swift in Sources */,

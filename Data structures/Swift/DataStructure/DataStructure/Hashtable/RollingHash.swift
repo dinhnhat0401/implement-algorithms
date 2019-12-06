@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct RollingHash {
+struct RollingHash1 {
 
 }
