@@ -7,7 +7,12 @@
 //
 import Foundation
 
+// https://leetcode.com/problems/repeated-dna-sequences
 class RepeatedDNA {
+    static func test() {
+        RepeatedDNA().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT")
+    }
+
     func findRepeatedDnaSequences(_ s: String) -> [String] {
         let l = 10 // length of sequence
 
@@ -36,8 +41,6 @@ class RepeatedDNA {
 
         var result = Set<String>()
         for i in l ..< s.count {
-            // let skip = s.index(s.startIndex, offsetBy:i - l)
-            // let append = s.index(s.startIndex, offsetBy:i)
             rh.skip(s[i - l])
             rh.append(s[i])
             if set.contains(rh.val) {
@@ -56,7 +59,7 @@ struct RollingHash {
     var b = 4
     var d:[Character: Int] = ["A": 0, "C": 1, "G": 2, "T": 3]
     var l = 10
-    var p = 11
+    var p = 1009
     var skipFactor = 0
 
     init(_ l: Int) {
@@ -65,10 +68,11 @@ struct RollingHash {
     }
 
     mutating func append(_ c: Character) {
-        val = val * b + d[c]!
+        val = (val * b + d[c]!) % p
     }
 
     mutating func skip(_ c: Character) {
-        val = val - d[c]! * skipFactor
+        // Note: 
+        val = (val - (d[c]! * skipFactor) % p + p) % p
     }
 }
