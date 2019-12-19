@@ -38,6 +38,7 @@
 		84EA7BF5239A7F600065CAD0 /* RepeatedDNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF4239A7F600065CAD0 /* RepeatedDNA.swift */; };
 		84EA7BF7239D26720065CAD0 /* FlattenMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF6239D26720065CAD0 /* FlattenMap.swift */; };
 		84EA7BF9239D39EA0065CAD0 /* SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */; };
+		FE56D3B823AB574900B41018 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3B723AB574800B41018 /* WordLadder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		84EA7BF4239A7F600065CAD0 /* RepeatedDNA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedDNA.swift; sourceTree = "<group>"; };
 		84EA7BF6239D26720065CAD0 /* FlattenMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlattenMap.swift; sourceTree = "<group>"; };
 		84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricTree.swift; sourceTree = "<group>"; };
+		FE56D3B723AB574800B41018 /* WordLadder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 		84EA7BC8238132880065CAD0 /* Leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				FE56D3B723AB574800B41018 /* WordLadder.swift */,
 				84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */,
 				84EA7BD323895BDD0065CAD0 /* MergeKSortedLists.swift */,
 				84EA7BD5238A7BCA0065CAD0 /* MaximumTreeDepth.swift */,
@@ -393,6 +396,7 @@
 				841D47942380399F0044534B /* Node.swift in Sources */,
 				84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */,
 				841D4761238038330044534B /* SceneDelegate.swift in Sources */,
+				FE56D3B823AB574900B41018 /* WordLadder.swift in Sources */,
 				84EA7BD423895BDD0065CAD0 /* MergeKSortedLists.swift in Sources */,
 				841D4792238038D20044534B /* Graph.swift in Sources */,
 				84EA7BD8238A99C20065CAD0 /* InvertBinaryTree.swift in Sources */,
