@@ -13,7 +13,6 @@
 		841D4766238038330044534B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841D4764238038330044534B /* Main.storyboard */; };
 		841D4768238038380044534B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841D4767238038380044534B /* Assets.xcassets */; };
 		841D476B238038380044534B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841D4769238038380044534B /* LaunchScreen.storyboard */; };
-		841D4781238038380044534B /* DataStructureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4780238038380044534B /* DataStructureUITests.swift */; };
 		841D4792238038D20044534B /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4791238038D20044534B /* Graph.swift */; };
 		841D47942380399F0044534B /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D47932380399F0044534B /* Node.swift */; };
 		844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */; };
@@ -50,13 +49,6 @@
 			remoteGlobalIDString = 841D475A238038330044534B;
 			remoteInfo = DataStructure;
 		};
-		841D477D238038380044534B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 841D4753238038330044534B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 841D475A238038330044534B;
-			remoteInfo = DataStructure;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -70,9 +62,6 @@
 		841D476C238038380044534B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841D4771238038380044534B /* DataStructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841D4777238038380044534B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		841D477C238038380044534B /* DataStructureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		841D4780238038380044534B /* DataStructureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructureUITests.swift; sourceTree = "<group>"; };
-		841D4782238038380044534B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841D4791238038D20044534B /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		841D47932380399F0044534B /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
@@ -116,13 +105,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		841D4779238038380044534B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -132,7 +114,6 @@
 				84EA7BC8238132880065CAD0 /* Leetcode */,
 				841D475D238038330044534B /* DataStructure */,
 				841D4774238038380044534B /* DataStructureTests */,
-				841D477F238038380044534B /* DataStructureUITests */,
 				841D475C238038330044534B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,7 +123,6 @@
 			children = (
 				841D475B238038330044534B /* DataStructure.app */,
 				841D4771238038380044534B /* DataStructureTests.xctest */,
-				841D477C238038380044534B /* DataStructureUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,15 +154,6 @@
 				844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */,
 			);
 			path = DataStructureTests;
-			sourceTree = "<group>";
-		};
-		841D477F238038380044534B /* DataStructureUITests */ = {
-			isa = PBXGroup;
-			children = (
-				841D4780238038380044534B /* DataStructureUITests.swift */,
-				841D4782238038380044534B /* Info.plist */,
-			);
-			path = DataStructureUITests;
 			sourceTree = "<group>";
 		};
 		841D478E2380387E0044534B /* Graph */ = {
@@ -297,24 +268,6 @@
 			productReference = 841D4771238038380044534B /* DataStructureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		841D477B238038380044534B /* DataStructureUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 841D478B238038380044534B /* Build configuration list for PBXNativeTarget "DataStructureUITests" */;
-			buildPhases = (
-				841D4778238038380044534B /* Sources */,
-				841D4779238038380044534B /* Frameworks */,
-				841D477A238038380044534B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				841D477E238038380044534B /* PBXTargetDependency */,
-			);
-			name = DataStructureUITests;
-			productName = DataStructureUITests;
-			productReference = 841D477C238038380044534B /* DataStructureUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -329,10 +282,6 @@
 						CreatedOnToolsVersion = 11.0;
 					};
 					841D4770238038380044534B = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 841D475A238038330044534B;
-					};
-					841D477B238038380044534B = {
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 841D475A238038330044534B;
 					};
@@ -353,7 +302,6 @@
 			targets = (
 				841D475A238038330044534B /* DataStructure */,
 				841D4770238038380044534B /* DataStructureTests */,
-				841D477B238038380044534B /* DataStructureUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -370,13 +318,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		841D476F238038380044534B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841D477A238038380044534B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -429,14 +370,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		841D4778238038380044534B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				841D4781238038380044534B /* DataStructureUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -444,11 +377,6 @@
 			isa = PBXTargetDependency;
 			target = 841D475A238038330044534B /* DataStructure */;
 			targetProxy = 841D4772238038380044534B /* PBXContainerItemProxy */;
-		};
-		841D477E238038380044534B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 841D475A238038330044534B /* DataStructure */;
-			targetProxy = 841D477D238038380044534B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -662,44 +590,6 @@
 			};
 			name = Release;
 		};
-		841D478C238038380044534B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataStructureUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nhat.DataStructureUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DataStructure;
-			};
-			name = Debug;
-		};
-		841D478D238038380044534B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataStructureUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nhat.DataStructureUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DataStructure;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -726,15 +616,6 @@
 			buildConfigurations = (
 				841D4789238038380044534B /* Debug */,
 				841D478A238038380044534B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		841D478B238038380044534B /* Build configuration list for PBXNativeTarget "DataStructureUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				841D478C238038380044534B /* Debug */,
-				841D478D238038380044534B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
