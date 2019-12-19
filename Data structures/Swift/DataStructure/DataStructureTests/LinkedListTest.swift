@@ -15,18 +15,7 @@ class LinkedListTest: XCTestCase {
         linkedList.append(data: 1)
         XCTAssertEqual(1, try linkedList.first())
         XCTAssertEqual(1, try linkedList.last())
-        XCTAssertEqual(1, try linkedList.removeFirst())
-        XCTAssertEqual(true, linkedList.isEmpty())
-    }
-
-    func testEmptyLinkedList() {
-        let linkedList = LinkedList<Int>()
-        do {
-            print(try linkedList.first())
-        } catch {
-            let e = error as? LinkedListError
-            XCTAssertEqual(e, LinkedListError.EmptyLinkedList)
-        }
+        XCTAssertEqual(false, linkedList.isEmpty())
     }
 
     func testInsertMorethanOneElement() {
@@ -39,5 +28,31 @@ class LinkedListTest: XCTestCase {
         XCTAssertEqual(1, try linkedList.removeFirst())
         XCTAssertEqual(2, try linkedList.first())
         XCTAssertEqual(false, linkedList.isEmpty())
+    }
+
+    func testRemoveFirst() {
+        var linkedList = LinkedList<Int>()
+        linkedList.append(data: 1)
+        XCTAssertEqual(1, try linkedList.removeFirst())
+        XCTAssertEqual(true, linkedList.isEmpty())
+    }
+
+    func testRemoveLast() {
+        var linkedList = LinkedList<Int>()
+        linkedList.append(data: 1)
+        XCTAssertEqual(1, try linkedList.first())
+        XCTAssertEqual(1, try linkedList.last())
+        XCTAssertEqual(1, try linkedList.removeLast())
+        XCTAssertEqual(true, linkedList.isEmpty())
+    }
+
+    func testEmptyLinkedList() {
+        let linkedList = LinkedList<Int>()
+        do {
+            print(try linkedList.first())
+        } catch {
+            let e = error as? LinkedListError
+            XCTAssertEqual(e, LinkedListError.EmptyLinkedList)
+        }
     }
 }
