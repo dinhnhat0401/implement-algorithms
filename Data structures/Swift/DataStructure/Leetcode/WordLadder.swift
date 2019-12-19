@@ -9,6 +9,10 @@
 import Foundation
 
 class WordLadder {
+    static func test() {
+
+    }
+
     func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
         // idea 1
         // fact: beginWord is not belong to wordList
@@ -23,6 +27,11 @@ class WordLadder {
         // start BFS from node(endWord)
             // if we reach a node related to beginWord
             // return current steps
+
+        for word in wordList {
+
+        }
+
         return 0
     }
 }
