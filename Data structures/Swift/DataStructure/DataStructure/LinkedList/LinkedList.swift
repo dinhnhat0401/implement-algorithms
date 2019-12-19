@@ -8,7 +8,7 @@
 
 import Foundation
 
-fileprivate struct LinkedListNode<T> {
+fileprivate class LinkedListNode<T> {
     var data: T
     var next: LinkedListNode<T>?
     var prev: LinkedListNode<T>?
@@ -20,12 +20,12 @@ fileprivate struct LinkedListNode<T> {
     }
 }
 
-public struct LinkedList<T> {
-    public enum LinkedListError: Error {
-        case EmptyLinkedList
-    }
+public enum LinkedListError: Error {
+    case EmptyLinkedList
+}
 
-    public func append(data: T) {
+public struct LinkedList<T> {
+    public mutating func append(data: T) {
         let newNode = LinkedListNode(data)
         if isEmpty() {
             head = newNode
@@ -37,7 +37,7 @@ public struct LinkedList<T> {
         }
     }
 
-    public func first() -> T throws {
+    public func first() throws -> T {
         if isEmpty() {
             throw LinkedListError.EmptyLinkedList
         }
@@ -45,20 +45,21 @@ public struct LinkedList<T> {
         return head!.data
     }
 
-    public func removeFirst() -> T throws {
+    public mutating func removeFirst() throws -> T {
         if isEmpty() {
             throw LinkedListError.EmptyLinkedList
         }
 
+        let val = head!.data
         head = head!.next
         if head == nil {
-            tail = tail!.next
+            tail = nil
         }
 
-
+        return val
     }
 
-    public func last() -> T throws {
+    public func last() throws -> T {
         if isEmpty() {
             throw LinkedListError.EmptyLinkedList
         }
@@ -66,12 +67,19 @@ public struct LinkedList<T> {
         return tail!.data
     }
 
-    public func removeLast() -> T throws {
+    public mutating func removeLast() throws -> T {
         if isEmpty() {
             throw LinkedListError.EmptyLinkedList
         }
 
-        return tail!.data
+        let val = tail!.data
+        tail!.prev?.next = tail!.next
+        tail = tail?.next
+
+        if tail == nil {
+            head = nil
+        }
+        return val
     }
 
     public func isEmpty() -> Bool {
