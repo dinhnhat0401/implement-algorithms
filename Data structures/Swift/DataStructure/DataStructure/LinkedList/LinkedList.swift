@@ -25,7 +25,7 @@ public enum LinkedListError: Error {
 }
 
 public struct LinkedList<T> {
-    public mutating func append(data: T) {
+    public mutating func append(_ data: T) {
         let newNode = LinkedListNode(data)
         if isEmpty() {
             head = newNode

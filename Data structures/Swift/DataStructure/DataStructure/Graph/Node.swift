@@ -6,15 +6,13 @@
 //  Copyright © 2019 Đinh Văn Nhật. All rights reserved.
 //
 
-class Node<T> where T: Hashable {
+public class Node<T> where T: Hashable {
     var data: T
     var adj: [Node<T>]
-    var color: Int // 0, 1, 2
 
     init(data: T) {
         self.data = data
         self.adj = [Node<T>]()
-        self.color = 0
     }
 }
 

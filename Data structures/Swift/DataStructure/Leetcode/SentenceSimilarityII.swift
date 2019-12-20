@@ -15,7 +15,7 @@ class SentenceSimilarityII {
         }
 
         // build graph
-        let g = Graph<String>()
+        var g = Graph<String>()
         for pair in pairs {
             g.addUndirectedEdge(pair[0], pair[1])
         }

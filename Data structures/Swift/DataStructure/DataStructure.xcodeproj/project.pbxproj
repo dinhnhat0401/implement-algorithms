@@ -39,6 +39,7 @@
 		84EA7BF9239D39EA0065CAD0 /* SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */; };
 		FE56D3B823AB574900B41018 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3B723AB574800B41018 /* WordLadder.swift */; };
 		FE56D3BB23AB59D300B41018 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3BA23AB59D300B41018 /* LinkedList.swift */; };
+		FE56D3BD23ACB8A500B41018 /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3BC23ACB8A500B41018 /* GraphTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricTree.swift; sourceTree = "<group>"; };
 		FE56D3B723AB574800B41018 /* WordLadder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 		FE56D3BA23AB59D300B41018 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		FE56D3BC23ACB8A500B41018 /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				841D4777238038380044534B /* Info.plist */,
 				844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */,
+				FE56D3BC23ACB8A500B41018 /* GraphTest.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE56D3BD23ACB8A500B41018 /* GraphTest.swift in Sources */,
 				844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

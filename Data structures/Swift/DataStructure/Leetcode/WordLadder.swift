@@ -19,19 +19,30 @@ class WordLadder {
         // fact: wordList contains unique words with same length
         // fact: endWord is belong to wordList
         // build a graph G from word list
-            // for each word in word list
-                // for each node in G.nodes
-                    // if word and node.data is related, word <=> node.data in just 1 edit
-                        // add new node with data as word
-                        // add newNode as an adjacency node of node and vice versa
+            // for each word1 in word list
+                // for each other word2 in word list
+                    // if word1 and word2 is related, word1 <=> word2 in just 1 edit
+                        // add a new undirected edge (word1 - word2) to G
         // start BFS from node(endWord)
             // if we reach a node related to beginWord
             // return current steps
 
-        for word in wordList {
+        var g = Graph()
 
+        for i in 0 ..< wordList.count - 1 {
+            for j in i + 1 ..< wordList.count {
+                if isRelated(wordList[i], wordList[j]) {
+                    g.addUndirectedEdge(wordList[i], wordList[j])
+                }
+            }
         }
 
+
+
         return 0
+    }
+
+    func isRelated(_ w1: String, _ w2: String) -> Bool {
+
     }
 }

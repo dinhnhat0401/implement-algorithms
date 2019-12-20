@@ -12,7 +12,7 @@ import XCTest
 class LinkedListTest: XCTestCase {
     func testInsertOneElement() {
         var linkedList = LinkedList<Int>()
-        linkedList.append(data: 1)
+        linkedList.append(1)
         XCTAssertEqual(1, try linkedList.first())
         XCTAssertEqual(1, try linkedList.last())
         XCTAssertEqual(false, linkedList.isEmpty())
@@ -20,9 +20,9 @@ class LinkedListTest: XCTestCase {
 
     func testInsertMorethanOneElement() {
         var linkedList = LinkedList<Int>()
-        linkedList.append(data: 1)
-        linkedList.append(data: 2)
-        linkedList.append(data: 3)
+        linkedList.append(1)
+        linkedList.append(2)
+        linkedList.append(3)
         XCTAssertEqual(1, try linkedList.first())
         XCTAssertEqual(3, try linkedList.last())
         XCTAssertEqual(1, try linkedList.removeFirst())
@@ -32,14 +32,14 @@ class LinkedListTest: XCTestCase {
 
     func testRemoveFirst() {
         var linkedList = LinkedList<Int>()
-        linkedList.append(data: 1)
+        linkedList.append(1)
         XCTAssertEqual(1, try linkedList.removeFirst())
         XCTAssertEqual(true, linkedList.isEmpty())
     }
 
     func testRemoveLast() {
         var linkedList = LinkedList<Int>()
-        linkedList.append(data: 1)
+        linkedList.append(1)
         XCTAssertEqual(1, try linkedList.first())
         XCTAssertEqual(1, try linkedList.last())
         XCTAssertEqual(1, try linkedList.removeLast())
