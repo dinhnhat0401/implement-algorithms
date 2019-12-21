@@ -18,6 +18,7 @@
 		844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */; };
 		84C6C66023A7BF3C008B6B75 /* ShortestPathInAGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */; };
 		84C780DC23AE4859004F0827 /* NumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780DB23AE4859004F0827 /* NumberOfIslands.swift */; };
+		84C780DE23AE6911004F0827 /* NumberOfIslands2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780DD23AE6911004F0827 /* NumberOfIslands2.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -68,6 +69,7 @@
 		844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathInAGrid.swift; sourceTree = "<group>"; };
 		84C780DB23AE4859004F0827 /* NumberOfIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfIslands.swift; sourceTree = "<group>"; };
+		84C780DD23AE6911004F0827 /* NumberOfIslands2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfIslands2.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */,
 				84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */,
 				84C780DB23AE4859004F0827 /* NumberOfIslands.swift */,
+				84C780DD23AE6911004F0827 /* NumberOfIslands2.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */,
 				84EA7BDF238D63050065CAD0 /* HeapTest.swift in Sources */,
 				84EA7BD6238A7BCB0065CAD0 /* MaximumTreeDepth.swift in Sources */,
+				84C780DE23AE6911004F0827 /* NumberOfIslands2.swift in Sources */,
 				84EA7BF12396A0A90065CAD0 /* GroupAnagrams.swift in Sources */,
 				841D47942380399F0044534B /* Node.swift in Sources */,
 				84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */,
