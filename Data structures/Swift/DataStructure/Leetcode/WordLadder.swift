@@ -80,4 +80,61 @@ class WordLadder {
 
         return count == 1
     }
+
+    func ladderLength2(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
+        // Idea 2
+        // 1. do the pre-processing on the given wordList and find all the possible generic/intermediate states. save these intermediate states in a dictionary with key as the intermediate word and value as the list of words which have the same intermediate word.
+        // 2. BFS start with frontier = [beginWord] til reach endWord
+        // 3. To prevent cycles, use a visited set
+
+        if wordList.count == 0 {
+            return 0
+        }
+
+        let L = wordList[0].count
+        var states = [String: [String]]()
+        for word in wordList {
+            let startIndex = word.startIndex
+            for i in 0 ..< L {
+                let ith = word.index(startIndex, offsetBy: i)
+                let afterith = word.index(after: ith)
+                let genericState = String(word[startIndex..<ith] + "*" + word[afterith...])
+                if states[genericState] == nil {
+                    states[genericState] = [String]()
+                }
+                states[genericState]!.append(word)
+            }
+        }
+
+        var frontier = [beginWord]
+        var layer = 1
+        var visited = Set<String>()
+
+        while frontier.count > 0 {
+            var next = [String]()
+            for currentWord in frontier {
+                for i in 0 ..< L {
+                    let startIndex = currentWord.startIndex
+                    let ith = currentWord.index(startIndex, offsetBy: i)
+                    let afterith = currentWord.index(after: ith)
+                    let genericState = String(currentWord[startIndex..<ith] + "*" + currentWord[afterith...])
+                    if !visited.contains(genericState) {
+                        visited.insert(genericState)
+                        if let currentState = states[genericState] {
+                            if currentState.contains(endWord) {
+                                return layer + 1
+                            }
+
+                            next.append(contentsOf: currentState)
+                        }
+                    }
+                }
+            }
+
+            frontier = next
+            layer += 1
+        }
+
+        return 0
+    }
 }
