@@ -176,11 +176,11 @@ class WordLadder {
         var visited2 = Set<String>()
 
         while frontier1.count > 0 && frontier2.count > 0 {
-            var next1 = getNext(frontier1, &visited1, states)
+            let next1 = getNext(frontier1, &visited1, states)
             if !next1.isDisjoint(with: frontier2) {
                 return layer1 + layer2
             }
-            var next2 = getNext(frontier2, &visited2, states)
+            let next2 = getNext(frontier2, &visited2, states)
             if !next2.isDisjoint(with: next1) {
                 return layer1 + layer2 + 1
             }
