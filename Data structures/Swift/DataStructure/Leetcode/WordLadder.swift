@@ -137,4 +137,80 @@ class WordLadder {
 
         return 0
     }
+
+    func ladderLength3(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
+        // Idea 2
+        // 1. do the pre-processing on the given wordList and find all the possible generic/intermediate states. save these intermediate states in a dictionary with key as the intermediate word and value as the list of words which have the same intermediate word.
+        // 2. BFS start with frontier = [beginWord] til reach endWord
+        // 3. To prevent cycles, use a visited set
+        // 4. Use BI-directional BFS to reduce search space
+
+        if wordList.count == 0 {
+            return 0
+        }
+
+        if !wordList.contains(endWord) {
+            return 0
+        }
+
+        let L = wordList[0].count
+        var states = [String: Set<String>]()
+        for word in wordList {
+            let startIndex = word.startIndex
+            for i in 0 ..< L {
+                let ith = word.index(startIndex, offsetBy: i)
+                let afterith = word.index(after: ith)
+                let genericState = String(word[startIndex..<ith] + "*" + word[afterith...])
+                if states[genericState] == nil {
+                    states[genericState] = Set<String>()
+                }
+                states[genericState]!.insert(word)
+            }
+        }
+
+        var frontier1:Set<String> = [beginWord]
+        var frontier2:Set<String> = [endWord]
+        var layer1 = 1
+        var layer2 = 1
+        var visited1 = Set<String>()
+        var visited2 = Set<String>()
+
+        while frontier1.count > 0 && frontier2.count > 0 {
+            var next1 = getNext(frontier1, &visited1, states)
+            if !next1.isDisjoint(with: frontier2) {
+                return layer1 + layer2
+            }
+            var next2 = getNext(frontier2, &visited2, states)
+            if !next2.isDisjoint(with: next1) {
+                return layer1 + layer2 + 1
+            }
+
+            frontier1 = next1
+            frontier2 = next2
+            layer1 += 1
+            layer2 += 1
+        }
+
+        return 0
+    }
+
+    func getNext(_ frontier: Set<String>, _ visited: inout Set<String>, _ states: [String: Set<String>]) -> Set<String> {
+        var next = Set<String>()
+        for currentWord in frontier {
+            for i in 0 ..< currentWord.count {
+                let startIndex = currentWord.startIndex
+                let ith = currentWord.index(startIndex, offsetBy: i)
+                let afterith = currentWord.index(after: ith)
+                let genericState = String(currentWord[startIndex..<ith] + "*" + currentWord[afterith...])
+                if !visited.contains(genericState) {
+                    visited.insert(genericState)
+                    if let currentState = states[genericState] {
+                        next = next.union(currentState)
+                    }
+                }
+            }
+        }
+
+        return next
+    }
 }
