@@ -7,7 +7,7 @@
 //
 
 
-open class Graph<T> where T: Hashable {
+public struct Graph<T> where T: Hashable {
 
     public var V: Int
     public var E: Int
@@ -17,9 +17,9 @@ open class Graph<T> where T: Hashable {
         self.E = 0
     }
 
-    public func addUndirectedEdge(_ data1: T, _ data2: T) {
-        let node1 = getNode(with: data1) ?? Node(data: data1)
-        let node2 = getNode(with: data2) ?? Node(data: data2)
+    public mutating func addUndirectedEdge(_ data1: T, _ data2: T) {
+        let node1 = getNode(data1) ?? Node(data: data1)
+        let node2 = getNode(data2) ?? Node(data: data2)
         node1.adj.append(node2)
         node2.adj.append(node1)
         nodes.updateValue(node1, forKey: data1)
@@ -33,21 +33,18 @@ open class Graph<T> where T: Hashable {
             return false
         }
 
-        // for each node in nodes, reset status of the node to 0
-        for node in nodes.values {
-            node.color = 0
-        }
+        var visited = Set<Node<T>>()
 
         // create a queue for BFS purpose
-        var q = [Node<T>]()
+        var q = LinkedList<Node<T>>()
 
         // enqueue src node
         q.append(source)
 
         // while queue is not empty try to
-        while q.count > 0 {
+        while !q.isEmpty() {
             // dequeue get first element
-            let first = q.removeFirst()
+            let first = try! q.removeFirst()
             // for each adjacency node of first
             for adj in first.adj {
                 // if this is the node we are looking for => return true, since we found it
@@ -55,29 +52,25 @@ open class Graph<T> where T: Hashable {
                     return true
                 }
                 // if element is not traversed - color = 0
-                if adj.color == 0 {
+                if visited.contains(adj) {
                     // change adjacency node color to 1
-                    adj.color = 1
+                    visited.insert(adj)
                     // enqueue
                     q.append(adj)
                 }
             }
-            // change first color to 2
-            first.color = 2
         }
         // return false since we searched hole graph
         return false
     }
 
+    func getNode(_ data: T) -> Node<T>? {
+        return nodes[data]
+    }
+
     // MARK: - private variables
 
     private var nodes = [T: Node<T>]()
-
-    // MARK: - private functions
-
-    private func getNode(with data: T) -> Node<T>? {
-        return nodes[data]
-    }
 }
 
 extension Graph: CustomStringConvertible {
