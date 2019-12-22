@@ -19,4 +19,10 @@ class Dijkstra {
 //            S = S ∪ {u}
 //            for each vertex v  Adj[u]
 //                do RELAX (u, v, w) ← this is an implicit DECREASE KEY operation
+
+
+//    Binary min-heap:
+//    Θ(lg V ) for extract min
+//    Θ(lg V ) for decrease key
+//    Total: Θ(V lg V + E lg V )
 }
