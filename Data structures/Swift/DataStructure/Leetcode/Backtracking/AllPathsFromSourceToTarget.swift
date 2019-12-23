@@ -23,6 +23,11 @@ class AllPathsFromSourceToTarget {
                 // add neighbor to path
                 // dfs for neighbor
                 // backtracking by removing last node from path
+        // Analytics:
+        // Time complexity: O(2^N * N^2)
+        // There exists two possibilities for each node (except for the first and the last): appearing or not appearing in the path. Therefore, we have 1*2*...*2*1 = 2^(N-2) possibilities for paths.
+        // For each path, there are at most N nodes, which collected one by one, each cost O(N)
+        // Space complexity: O(2^N * N) the size of the output dominating the final space complexity.
 
         var result = [[Int]]()
         var path = [0] // path starts from node 0
