@@ -44,6 +44,8 @@
 		84EA7BF9239D39EA0065CAD0 /* SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */; };
 		FE56D3B823AB574900B41018 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3B723AB574800B41018 /* WordLadder.swift */; };
 		FE56D3BB23AB59D300B41018 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3BA23AB59D300B41018 /* LinkedList.swift */; };
+		FE56D3BF23B06D5B00B41018 /* GuessNumberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3BE23B06D5B00B41018 /* GuessNumberII.swift */; };
+		FE56D3C123B0924D00B41018 /* GuessNumberIITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3C023B0924D00B41018 /* GuessNumberIITest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricTree.swift; sourceTree = "<group>"; };
 		FE56D3B723AB574800B41018 /* WordLadder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 		FE56D3BA23AB59D300B41018 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		FE56D3BE23B06D5B00B41018 /* GuessNumberII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberII.swift; sourceTree = "<group>"; };
+		FE56D3C023B0924D00B41018 /* GuessNumberIITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberIITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 				841D4777238038380044534B /* Info.plist */,
 				844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */,
 				84C780DF23AF2A46004F0827 /* NumberOfIsland2Test.swift */,
+				FE56D3C023B0924D00B41018 /* GuessNumberIITest.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */,
 				84C780DB23AE4859004F0827 /* NumberOfIslands.swift */,
 				84C780DD23AE6911004F0827 /* NumberOfIslands2.swift */,
+				FE56D3BE23B06D5B00B41018 /* GuessNumberII.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 				84EA7BD6238A7BCB0065CAD0 /* MaximumTreeDepth.swift in Sources */,
 				84C780DE23AE6911004F0827 /* NumberOfIslands2.swift in Sources */,
 				84EA7BF12396A0A90065CAD0 /* GroupAnagrams.swift in Sources */,
+				FE56D3BF23B06D5B00B41018 /* GuessNumberII.swift in Sources */,
 				84C780E423AF4646004F0827 /* BellmanFord.swift in Sources */,
 				841D47942380399F0044534B /* Node.swift in Sources */,
 				84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */,
@@ -385,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE56D3C123B0924D00B41018 /* GuessNumberIITest.swift in Sources */,
 				844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */,
 				84C780E023AF2A46004F0827 /* NumberOfIsland2Test.swift in Sources */,
 			);
