@@ -18,19 +18,20 @@ class GuessNumberII {
             return 1
         }
 
-        var dp = [[Int]](repeating: [Int](repeating: Int.max, count: n + 1), count: n + 1)
+        var dp = [[Int]](repeating: [Int](repeating: -1, count: n + 1), count: n + 1)
         for i in 1 ... (n - 1) {
             dp[i][i] = 0
             dp[i][i + 1] = i
         }
         dp[n][n] = 0
 
-        for l in 1 ... (n - 2) {
-            for r in (l + 2) ... n {
-                for i in (l + (r - l)/2) ... r {
-                    let pivot = i + (r - i) / 2
-                    dp[l][r] = min(dp[l][r], pivot + max(dp[l][pivot - 1], dp[min(pivot + 1, r)][r]))
+        for len in 2 ... (n - 1) {
+            for l in 1 ... n - len {
+                var minVal = Int.max
+                for pivot in (l + len/2) ..< (l + len) {
+                    minVal = min(minVal, pivot + max(dp[l][pivot - 1], dp[pivot + 1][l + len]))
                 }
+                dp[l][l + len] = minVal
             }
         }
 

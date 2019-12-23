@@ -11,10 +11,10 @@ import XCTest
 
 class GuessNumberIITest: XCTestCase {
     func test1() {
-//        XCTAssertEqual(GuessNumberII().getMoneyAmount(1), 0)
-//        XCTAssertEqual(GuessNumberII().getMoneyAmount(2), 1)
-//        XCTAssertEqual(GuessNumberII().getMoneyAmount(3), 2)
-//        XCTAssertEqual(GuessNumberII().getMoneyAmount(4), 4)
+        XCTAssertEqual(GuessNumberII().getMoneyAmount(1), 0)
+        XCTAssertEqual(GuessNumberII().getMoneyAmount(2), 1)
+        XCTAssertEqual(GuessNumberII().getMoneyAmount(3), 2)
+        XCTAssertEqual(GuessNumberII().getMoneyAmount(4), 4)
         XCTAssertEqual(GuessNumberII().getMoneyAmount(6), 8)
     }
 }
