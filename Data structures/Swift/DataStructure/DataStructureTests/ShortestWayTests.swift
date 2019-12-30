@@ -17,4 +17,8 @@ class ShortestWayTests: XCTestCase {
     func test2() {
         XCTAssertEqual(ShortestWay().shortestWay("xyz", "xzyxz"), 3)
     }
+
+    func test3() {
+        XCTAssertEqual(ShortestWay().shortestWay2("xyz", "xzyxz"), 3)
+    }
 }

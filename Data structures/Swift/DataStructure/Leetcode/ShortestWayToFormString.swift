@@ -5,11 +5,12 @@
 //  Created by Đinh Văn Nhật on 2019/12/30.
 //  Copyright © 2019 Đinh Văn Nhật. All rights reserved.
 //
-
+// https://leetcode.com/problems/shortest-way-to-form-string/submissions/
 class ShortestWay {
     let a = Int(Character("a").asciiValue!)
     let z = Int(Character("z").asciiValue!)
 
+    // DP approach with TLE
     func shortestWay(_ source: String, _ target: String) -> Int {
         // check if their
         var process = [[Int]](repeating: [Int](), count: z - a + 1)
@@ -56,6 +57,46 @@ class ShortestWay {
 
         return dp[0][n-1]
     }
+
+    func shortestWay2(_ source: String, _ target: String) -> Int {
+        // check if their
+        var process = [[Int]](repeating: [Int](), count: z - a + 1)
+        let t = Array(source)
+        for (i, c) in t.enumerated() {
+            process[Int(c.asciiValue!) - a].append(i)
+        }
+        if !isExistWay(target, process) {
+            return -1
+        }
+
+        // initialize a DP array
+        // calculate minimum number of subsequences for each substrings
+        // for i in 0 ..< n
+            // for j in 0 ... i
+                // if dp[j] is calculated and dp[j] is a subsequence
+                    // dp[i] = min(dp[i], dp[j] + 1)
+        let n = target.count
+        var dp = [Int](repeating: Int.max, count: target.count)
+        dp[0] = 1
+
+        let startIndex = target.startIndex
+        for i in 1 ..< n {
+            let ith = target.index(startIndex, offsetBy: i)
+            if isSubsequence(String(target[...ith]), process) {
+                dp[i] = 1
+                continue
+            }
+            for j in 0 ..< i {
+                let afterjth = target.index(startIndex, offsetBy: j + 1)
+                if isSubsequence(String(target[afterjth...ith]), process) {
+                    dp[i] = min(dp[i], dp[j] + 1)
+                }
+            }
+        }
+
+        return dp[n - 1]
+    }
+
 
     func isExistWay(_ s: String, _ process: [[Int]]) -> Bool {
         let s = Array(s)
