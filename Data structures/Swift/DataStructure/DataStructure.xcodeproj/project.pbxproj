@@ -31,6 +31,9 @@
 		84C780F623B8C24D004F0827 /* ConfusingNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780F523B8C24D004F0827 /* ConfusingNumberTests.swift */; };
 		84C780F823B99750004F0827 /* ShortestWayToFormString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780F723B99750004F0827 /* ShortestWayToFormString.swift */; };
 		84C780FA23B99769004F0827 /* ShortestWayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780F923B99769004F0827 /* ShortestWayTests.swift */; };
+		84C780FC23B9EEC9004F0827 /* NextPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780FB23B9EEC9004F0827 /* NextPermutation.swift */; };
+		84C780FE23B9EEEE004F0827 /* NextPermutationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780FD23B9EEEE004F0827 /* NextPermutationTests.swift */; };
+		84C7810123BCB758004F0827 /* FractionRecurring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780FF23BCB754004F0827 /* FractionRecurring.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -96,6 +99,9 @@
 		84C780F523B8C24D004F0827 /* ConfusingNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfusingNumberTests.swift; sourceTree = "<group>"; };
 		84C780F723B99750004F0827 /* ShortestWayToFormString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestWayToFormString.swift; sourceTree = "<group>"; };
 		84C780F923B99769004F0827 /* ShortestWayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestWayTests.swift; sourceTree = "<group>"; };
+		84C780FB23B9EEC9004F0827 /* NextPermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutation.swift; sourceTree = "<group>"; };
+		84C780FD23B9EEEE004F0827 /* NextPermutationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationTests.swift; sourceTree = "<group>"; };
+		84C780FF23BCB754004F0827 /* FractionRecurring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionRecurring.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 				84C780F023B637DF004F0827 /* StudentScoreTests.swift */,
 				84C780F523B8C24D004F0827 /* ConfusingNumberTests.swift */,
 				84C780F923B99769004F0827 /* ShortestWayTests.swift */,
+				84C780FD23B9EEEE004F0827 /* NextPermutationTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -238,6 +245,8 @@
 				84C780EE23B637BE004F0827 /* StudentScore.swift */,
 				84C780F223B8C232004F0827 /* ConfusingNumber.swift */,
 				84C780F723B99750004F0827 /* ShortestWayToFormString.swift */,
+				84C780FB23B9EEC9004F0827 /* NextPermutation.swift */,
+				84C780FF23BCB754004F0827 /* FractionRecurring.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -406,6 +415,7 @@
 				84EA7BDF238D63050065CAD0 /* HeapTest.swift in Sources */,
 				84EA7BD6238A7BCB0065CAD0 /* MaximumTreeDepth.swift in Sources */,
 				84C780DE23AE6911004F0827 /* NumberOfIslands2.swift in Sources */,
+				84C7810123BCB758004F0827 /* FractionRecurring.swift in Sources */,
 				84EA7BF12396A0A90065CAD0 /* GroupAnagrams.swift in Sources */,
 				FE56D3BF23B06D5B00B41018 /* GuessNumberII.swift in Sources */,
 				84C780E423AF4646004F0827 /* BellmanFord.swift in Sources */,
@@ -434,6 +444,8 @@
 				FE56D3C123B0924D00B41018 /* GuessNumberIITest.swift in Sources */,
 				84C780FA23B99769004F0827 /* ShortestWayTests.swift in Sources */,
 				844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */,
+				84C780FE23B9EEEE004F0827 /* NextPermutationTests.swift in Sources */,
+				84C780FC23B9EEC9004F0827 /* NextPermutation.swift in Sources */,
 				84C780F823B99750004F0827 /* ShortestWayToFormString.swift in Sources */,
 				84C780E023AF2A46004F0827 /* NumberOfIsland2Test.swift in Sources */,
 				84C780F123B637DF004F0827 /* StudentScoreTests.swift in Sources */,
