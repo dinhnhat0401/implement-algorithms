@@ -38,6 +38,7 @@
 		84C7810523BCE72C004F0827 /* MinDistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7810423BCE72C004F0827 /* MinDistanceTests.swift */; };
 		84C7810723BCFB4F004F0827 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7810623BCFB4F004F0827 /* AddTwoNumbers.swift */; };
 		84C7810923BDC7B9004F0827 /* KnightProbability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7810823BDC7B9004F0827 /* KnightProbability.swift */; };
+		84C7810B23BDCF79004F0827 /* KnightProbabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7810A23BDCF79004F0827 /* KnightProbabilityTests.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -110,6 +111,7 @@
 		84C7810423BCE72C004F0827 /* MinDistanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinDistanceTests.swift; sourceTree = "<group>"; };
 		84C7810623BCFB4F004F0827 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
 		84C7810823BDC7B9004F0827 /* KnightProbability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnightProbability.swift; sourceTree = "<group>"; };
+		84C7810A23BDCF79004F0827 /* KnightProbabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnightProbabilityTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				84C780F923B99769004F0827 /* ShortestWayTests.swift */,
 				84C780FD23B9EEEE004F0827 /* NextPermutationTests.swift */,
 				84C7810423BCE72C004F0827 /* MinDistanceTests.swift */,
+				84C7810A23BDCF79004F0827 /* KnightProbabilityTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */,
 				84C780FE23B9EEEE004F0827 /* NextPermutationTests.swift in Sources */,
 				84C780FC23B9EEC9004F0827 /* NextPermutation.swift in Sources */,
+				84C7810B23BDCF79004F0827 /* KnightProbabilityTests.swift in Sources */,
 				84C780F823B99750004F0827 /* ShortestWayToFormString.swift in Sources */,
 				84C7810923BDC7B9004F0827 /* KnightProbability.swift in Sources */,
 				84C780E023AF2A46004F0827 /* NumberOfIsland2Test.swift in Sources */,

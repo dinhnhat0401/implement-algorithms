@@ -42,5 +42,34 @@ class KnightProbability {
         }
     }
 
-    let directions = [[-1, -2], [-2, -1], [-2, 1], [-1, 2], [1, 2]]
+    func knightProbability2(_ N: Int, _ K: Int, _ r: Int, _ c: Int) -> Double {
+        // dp[i][j][k] stands for posibility of the knight at position [i][j] still in the chessboard after k moves
+        // dp[i][j][0] = 1 if i and j belong to [0, N)
+        // dp[i][j][k] = sum(dp[i + d[0]][j + d[1]][k - 1]) // if i + d[0] and j + d[1] is belong to [0, N)
+        var dp = [[[Double]]](repeating: [[Double]](repeating: [Double](repeating: 0, count: K + 1), count: N), count: N) // dp[N][N][K]
+        for i in 0 ..< N {
+            for j in 0 ..< N {
+                dp[i][j][0] = 1.0
+            }
+        }
+
+        for k in 1 ... K {
+            for i in 0 ..< N {
+                for j in 0 ..< N {
+                    var sum: Double = 0
+                    for d in directions {
+                        let newPos = [i + d[0], j + d[1]]
+                        if newPos[0] >= 0 && newPos[0] < N && newPos[1] >= 0 && newPos[1] < N {
+                            sum += (dp[newPos[0]][newPos[1]][k - 1] * 0.125)
+                        }
+                    }
+                    dp[i][j][k] = sum
+                }
+            }
+        }
+
+        return dp[r][c][K]
+    }
+
+    let directions = [[-1, -2], [-2, -1], [-2, 1], [-1, 2], [1, 2], [2, 1], [2, -1], [1, -2]]
 }
