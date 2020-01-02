@@ -36,6 +36,8 @@
 		84C7810123BCB758004F0827 /* FractionRecurring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780FF23BCB754004F0827 /* FractionRecurring.swift */; };
 		84C7810323BCE716004F0827 /* MinDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7810223BCE716004F0827 /* MinDistance.swift */; };
 		84C7810523BCE72C004F0827 /* MinDistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7810423BCE72C004F0827 /* MinDistanceTests.swift */; };
+		84C7810723BCFB4F004F0827 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7810623BCFB4F004F0827 /* AddTwoNumbers.swift */; };
+		84C7810923BDC7B9004F0827 /* KnightProbability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7810823BDC7B9004F0827 /* KnightProbability.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -106,6 +108,8 @@
 		84C780FF23BCB754004F0827 /* FractionRecurring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionRecurring.swift; sourceTree = "<group>"; };
 		84C7810223BCE716004F0827 /* MinDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinDistance.swift; sourceTree = "<group>"; };
 		84C7810423BCE72C004F0827 /* MinDistanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinDistanceTests.swift; sourceTree = "<group>"; };
+		84C7810623BCFB4F004F0827 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
+		84C7810823BDC7B9004F0827 /* KnightProbability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnightProbability.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				84C780E823B10033004F0827 /* AllPathsFromSourceToTarget.swift */,
+				84C7810823BDC7B9004F0827 /* KnightProbability.swift */,
 			);
 			path = Backtracking;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				84C780FB23B9EEC9004F0827 /* NextPermutation.swift */,
 				84C780FF23BCB754004F0827 /* FractionRecurring.swift */,
 				84C7810223BCE716004F0827 /* MinDistance.swift */,
+				84C7810623BCFB4F004F0827 /* AddTwoNumbers.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -447,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C7810723BCFB4F004F0827 /* AddTwoNumbers.swift in Sources */,
 				FE56D3C123B0924D00B41018 /* GuessNumberIITest.swift in Sources */,
 				84C7810323BCE716004F0827 /* MinDistance.swift in Sources */,
 				84C780FA23B99769004F0827 /* ShortestWayTests.swift in Sources */,
@@ -454,6 +461,7 @@
 				84C780FE23B9EEEE004F0827 /* NextPermutationTests.swift in Sources */,
 				84C780FC23B9EEC9004F0827 /* NextPermutation.swift in Sources */,
 				84C780F823B99750004F0827 /* ShortestWayToFormString.swift in Sources */,
+				84C7810923BDC7B9004F0827 /* KnightProbability.swift in Sources */,
 				84C780E023AF2A46004F0827 /* NumberOfIsland2Test.swift in Sources */,
 				84C780F123B637DF004F0827 /* StudentScoreTests.swift in Sources */,
 				84C780ED23B4E410004F0827 /* SubsequenceTests.swift in Sources */,
