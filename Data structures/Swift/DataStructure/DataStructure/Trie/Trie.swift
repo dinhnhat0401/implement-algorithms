@@ -30,6 +30,24 @@ class Trie {
         cur.isCompleteWord = true
     }
 
+//    /** Delete a word from the trie. */
+//    func delete(_ word: String) -> Bool {
+        // start from the empty root as usual
+        // while move down the trie via children nodes
+            // if any child node is null
+                // return false -> the word doesn't exist in current trie
+        // if current node has children
+            // mark current node not a complete word anymore
+        // else
+            // we have a big problem to solve
+            // we have two options
+                // 1: store a parent pointer to go backward form child to parent
+                // 2: go from root to current node, put element in a stack
+            // from current (node specified by word) go backward to root
+                // until we found a node that has >= 2 children
+                    // delete the node from parent children
+//    }
+
     /** Returns if the word is in the trie. */
     func search(_ word: String) -> Bool {
         var cur = root
