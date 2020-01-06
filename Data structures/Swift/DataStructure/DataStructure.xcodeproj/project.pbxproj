@@ -47,6 +47,8 @@
 		84C7811723BEF61B004F0827 /* MaxAreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7811623BEF61B004F0827 /* MaxAreaTests.swift */; };
 		84C7811923BF811C004F0827 /* AddBoldTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7811823BF811C004F0827 /* AddBoldTag.swift */; };
 		84C7811B23BF815B004F0827 /* AddBoldTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7811A23BF815B004F0827 /* AddBoldTagTests.swift */; };
+		84C7811E23C36276004F0827 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7811D23C36276004F0827 /* Trie.swift */; };
+		84C7812023C3628D004F0827 /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7811F23C3628D004F0827 /* TrieTests.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -128,6 +130,8 @@
 		84C7811623BEF61B004F0827 /* MaxAreaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxAreaTests.swift; sourceTree = "<group>"; };
 		84C7811823BF811C004F0827 /* AddBoldTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoldTag.swift; sourceTree = "<group>"; };
 		84C7811A23BF815B004F0827 /* AddBoldTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoldTagTests.swift; sourceTree = "<group>"; };
+		84C7811D23C36276004F0827 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		84C7811F23C3628D004F0827 /* TrieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -194,6 +198,7 @@
 		841D475D238038330044534B /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				84C7811C23C36266004F0827 /* Trie */,
 				FE56D3B923AB59AE00B41018 /* LinkedList */,
 				84EA7BE9239679D00065CAD0 /* Hashtable */,
 				84EA7BD9238AC79A0065CAD0 /* Tree */,
@@ -229,6 +234,7 @@
 				84C7811223BE1B63004F0827 /* ReorderListTests.swift */,
 				84C7811623BEF61B004F0827 /* MaxAreaTests.swift */,
 				84C7811A23BF815B004F0827 /* AddBoldTagTests.swift */,
+				84C7811F23C3628D004F0827 /* TrieTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -252,6 +258,14 @@
 				84C7810823BDC7B9004F0827 /* KnightProbability.swift */,
 			);
 			path = Backtracking;
+			sourceTree = "<group>";
+		};
+		84C7811C23C36266004F0827 /* Trie */ = {
+			isa = PBXGroup;
+			children = (
+				84C7811D23C36276004F0827 /* Trie.swift */,
+			);
+			path = Trie;
 			sourceTree = "<group>";
 		};
 		84EA7BC8238132880065CAD0 /* Leetcode */ = {
@@ -450,6 +464,7 @@
 				84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */,
 				84C780DC23AE4859004F0827 /* NumberOfIslands.swift in Sources */,
 				84EA7BE123936AAF0065CAD0 /* TicTacToe.swift in Sources */,
+				84C7811E23C36276004F0827 /* Trie.swift in Sources */,
 				84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */,
 				84EA7BDF238D63050065CAD0 /* HeapTest.swift in Sources */,
 				84EA7BD6238A7BCB0065CAD0 /* MaximumTreeDepth.swift in Sources */,
@@ -489,6 +504,7 @@
 				84C780FA23B99769004F0827 /* ShortestWayTests.swift in Sources */,
 				844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */,
 				84C780FE23B9EEEE004F0827 /* NextPermutationTests.swift in Sources */,
+				84C7812023C3628D004F0827 /* TrieTests.swift in Sources */,
 				84C780FC23B9EEC9004F0827 /* NextPermutation.swift in Sources */,
 				84C7810B23BDCF79004F0827 /* KnightProbabilityTests.swift in Sources */,
 				84C7810D23BDE70C004F0827 /* IslandPerimeter.swift in Sources */,
