@@ -49,6 +49,12 @@
 		84C7811B23BF815B004F0827 /* AddBoldTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7811A23BF815B004F0827 /* AddBoldTagTests.swift */; };
 		84C7811E23C36276004F0827 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7811D23C36276004F0827 /* Trie.swift */; };
 		84C7812023C3628D004F0827 /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7811F23C3628D004F0827 /* TrieTests.swift */; };
+		84C7812223C4D4D7004F0827 /* RotateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7812123C4D4D7004F0827 /* RotateImage.swift */; };
+		84C7812423C4D4EF004F0827 /* RotateImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7812323C4D4EF004F0827 /* RotateImageTests.swift */; };
+		84C7812623C7626C004F0827 /* DuplicateZeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7812523C7626C004F0827 /* DuplicateZeros.swift */; };
+		84C7812823C76284004F0827 /* DuplicateZerosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7812723C76284004F0827 /* DuplicateZerosTests.swift */; };
+		84C7812A23CAB8C5004F0827 /* LongestSubstringsK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7812923CAB8C4004F0827 /* LongestSubstringsK.swift */; };
+		84C7812C23CAB8D9004F0827 /* LongestSubstringsKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7812B23CAB8D9004F0827 /* LongestSubstringsKTests.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -132,6 +138,12 @@
 		84C7811A23BF815B004F0827 /* AddBoldTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoldTagTests.swift; sourceTree = "<group>"; };
 		84C7811D23C36276004F0827 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		84C7811F23C3628D004F0827 /* TrieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTests.swift; sourceTree = "<group>"; };
+		84C7812123C4D4D7004F0827 /* RotateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateImage.swift; sourceTree = "<group>"; };
+		84C7812323C4D4EF004F0827 /* RotateImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateImageTests.swift; sourceTree = "<group>"; };
+		84C7812523C7626C004F0827 /* DuplicateZeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateZeros.swift; sourceTree = "<group>"; };
+		84C7812723C76284004F0827 /* DuplicateZerosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateZerosTests.swift; sourceTree = "<group>"; };
+		84C7812923CAB8C4004F0827 /* LongestSubstringsK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringsK.swift; sourceTree = "<group>"; };
+		84C7812B23CAB8D9004F0827 /* LongestSubstringsKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringsKTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -235,6 +247,9 @@
 				84C7811623BEF61B004F0827 /* MaxAreaTests.swift */,
 				84C7811A23BF815B004F0827 /* AddBoldTagTests.swift */,
 				84C7811F23C3628D004F0827 /* TrieTests.swift */,
+				84C7812323C4D4EF004F0827 /* RotateImageTests.swift */,
+				84C7812723C76284004F0827 /* DuplicateZerosTests.swift */,
+				84C7812B23CAB8D9004F0827 /* LongestSubstringsKTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -300,6 +315,9 @@
 				84C7811023BE1B1B004F0827 /* ReorderList.swift */,
 				84C7811423BEF603004F0827 /* MaxArea.swift */,
 				84C7811823BF811C004F0827 /* AddBoldTag.swift */,
+				84C7812123C4D4D7004F0827 /* RotateImage.swift */,
+				84C7812523C7626C004F0827 /* DuplicateZeros.swift */,
+				84C7812923CAB8C4004F0827 /* LongestSubstringsK.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -471,6 +489,7 @@
 				84C780DE23AE6911004F0827 /* NumberOfIslands2.swift in Sources */,
 				84C7810123BCB758004F0827 /* FractionRecurring.swift in Sources */,
 				84EA7BF12396A0A90065CAD0 /* GroupAnagrams.swift in Sources */,
+				84C7812A23CAB8C5004F0827 /* LongestSubstringsK.swift in Sources */,
 				FE56D3BF23B06D5B00B41018 /* GuessNumberII.swift in Sources */,
 				84C780E423AF4646004F0827 /* BellmanFord.swift in Sources */,
 				841D47942380399F0044534B /* Node.swift in Sources */,
@@ -495,7 +514,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C7812423C4D4EF004F0827 /* RotateImageTests.swift in Sources */,
 				84C7810723BCFB4F004F0827 /* AddTwoNumbers.swift in Sources */,
+				84C7812623C7626C004F0827 /* DuplicateZeros.swift in Sources */,
+				84C7812C23CAB8D9004F0827 /* LongestSubstringsKTests.swift in Sources */,
 				84C7811323BE1B63004F0827 /* ReorderListTests.swift in Sources */,
 				FE56D3C123B0924D00B41018 /* GuessNumberIITest.swift in Sources */,
 				84C7810323BCE716004F0827 /* MinDistance.swift in Sources */,
@@ -516,7 +538,9 @@
 				84C7811923BF811C004F0827 /* AddBoldTag.swift in Sources */,
 				84C780F123B637DF004F0827 /* StudentScoreTests.swift in Sources */,
 				84C780ED23B4E410004F0827 /* SubsequenceTests.swift in Sources */,
+				84C7812223C4D4D7004F0827 /* RotateImage.swift in Sources */,
 				84C780F623B8C24D004F0827 /* ConfusingNumberTests.swift in Sources */,
+				84C7812823C76284004F0827 /* DuplicateZerosTests.swift in Sources */,
 				84C7810523BCE72C004F0827 /* MinDistanceTests.swift in Sources */,
 				84C7811B23BF815B004F0827 /* AddBoldTagTests.swift in Sources */,
 			);
