@@ -1,10 +1,14 @@
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+//import java.net.URLEncoder;
+//import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class CallAPI {
   public int makeRequest(int n, String seed) throws IOException {
+//    return URLEncoder.encode(value, StandardCharsets.UTF_8.toString());
+
     // implement calling server here!
     URL serverUrl =
         new URL("https://API-API/ask?n=" + n + "&seed="+ seed);
