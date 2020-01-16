@@ -77,6 +77,8 @@
 		84EA7BF5239A7F600065CAD0 /* RepeatedDNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF4239A7F600065CAD0 /* RepeatedDNA.swift */; };
 		84EA7BF7239D26720065CAD0 /* FlattenMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF6239D26720065CAD0 /* FlattenMap.swift */; };
 		84EA7BF9239D39EA0065CAD0 /* SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */; };
+		FE36A9C023D0364C006586E5 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36A9BF23D0364C006586E5 /* LinkedListNode.swift */; };
+		FE36A9C223D03C84006586E5 /* LinkedListSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36A9C123D03C84006586E5 /* LinkedListSequenceTests.swift */; };
 		FE56D3B823AB574900B41018 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3B723AB574800B41018 /* WordLadder.swift */; };
 		FE56D3BB23AB59D300B41018 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3BA23AB59D300B41018 /* LinkedList.swift */; };
 		FE56D3BF23B06D5B00B41018 /* GuessNumberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3BE23B06D5B00B41018 /* GuessNumberII.swift */; };
@@ -168,6 +170,8 @@
 		84EA7BF4239A7F600065CAD0 /* RepeatedDNA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedDNA.swift; sourceTree = "<group>"; };
 		84EA7BF6239D26720065CAD0 /* FlattenMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlattenMap.swift; sourceTree = "<group>"; };
 		84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricTree.swift; sourceTree = "<group>"; };
+		FE36A9BF23D0364C006586E5 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
+		FE36A9C123D03C84006586E5 /* LinkedListSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListSequenceTests.swift; sourceTree = "<group>"; };
 		FE56D3B723AB574800B41018 /* WordLadder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 		FE56D3BA23AB59D300B41018 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		FE56D3BE23B06D5B00B41018 /* GuessNumberII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberII.swift; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 		841D475D238038330044534B /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				FE36A9BE23D0351B006586E5 /* Sequence */,
 				84C7811C23C36266004F0827 /* Trie */,
 				FE56D3B923AB59AE00B41018 /* LinkedList */,
 				84EA7BE9239679D00065CAD0 /* Hashtable */,
@@ -254,6 +259,7 @@
 				84C7812323C4D4EF004F0827 /* RotateImageTests.swift */,
 				84C7812723C76284004F0827 /* DuplicateZerosTests.swift */,
 				84C7812B23CAB8D9004F0827 /* LongestSubstringsKTests.swift */,
+				FE36A9C123D03C84006586E5 /* LinkedListSequenceTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -362,6 +368,14 @@
 				84EA7BF6239D26720065CAD0 /* FlattenMap.swift */,
 			);
 			path = Hashtable;
+			sourceTree = "<group>";
+		};
+		FE36A9BE23D0351B006586E5 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				FE36A9BF23D0364C006586E5 /* LinkedListNode.swift */,
+			);
+			path = Sequence;
 			sourceTree = "<group>";
 		};
 		FE56D3B923AB59AE00B41018 /* LinkedList */ = {
@@ -499,6 +513,7 @@
 				84C7812A23CAB8C5004F0827 /* LongestSubstringsK.swift in Sources */,
 				FE56D3BF23B06D5B00B41018 /* GuessNumberII.swift in Sources */,
 				84C780E423AF4646004F0827 /* BellmanFord.swift in Sources */,
+				FE36A9C023D0364C006586E5 /* LinkedListNode.swift in Sources */,
 				841D47942380399F0044534B /* Node.swift in Sources */,
 				84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */,
 				841D4761238038330044534B /* SceneDelegate.swift in Sources */,
@@ -527,6 +542,7 @@
 				84C7812C23CAB8D9004F0827 /* LongestSubstringsKTests.swift in Sources */,
 				84C7811323BE1B63004F0827 /* ReorderListTests.swift in Sources */,
 				FE56D3C123B0924D00B41018 /* GuessNumberIITest.swift in Sources */,
+				FE36A9C223D03C84006586E5 /* LinkedListSequenceTests.swift in Sources */,
 				84C7810323BCE716004F0827 /* MinDistance.swift in Sources */,
 				84C7811723BEF61B004F0827 /* MaxAreaTests.swift in Sources */,
 				84C7811123BE1B1B004F0827 /* ReorderList.swift in Sources */,
