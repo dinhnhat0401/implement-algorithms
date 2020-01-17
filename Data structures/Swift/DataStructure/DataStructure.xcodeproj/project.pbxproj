@@ -79,6 +79,8 @@
 		84EA7BF9239D39EA0065CAD0 /* SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */; };
 		FE36A9C023D0364C006586E5 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36A9BF23D0364C006586E5 /* LinkedListNode.swift */; };
 		FE36A9C223D03C84006586E5 /* LinkedListSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36A9C123D03C84006586E5 /* LinkedListSequenceTests.swift */; };
+		FE36A9C623D15D24006586E5 /* BackspaceCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36A9C523D15D24006586E5 /* BackspaceCompare.swift */; };
+		FE36A9C823D15F94006586E5 /* BackspaceCompareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE36A9C723D15F94006586E5 /* BackspaceCompareTests.swift */; };
 		FE56D3B823AB574900B41018 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3B723AB574800B41018 /* WordLadder.swift */; };
 		FE56D3BB23AB59D300B41018 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3BA23AB59D300B41018 /* LinkedList.swift */; };
 		FE56D3BF23B06D5B00B41018 /* GuessNumberII.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE56D3BE23B06D5B00B41018 /* GuessNumberII.swift */; };
@@ -172,6 +174,8 @@
 		84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricTree.swift; sourceTree = "<group>"; };
 		FE36A9BF23D0364C006586E5 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		FE36A9C123D03C84006586E5 /* LinkedListSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListSequenceTests.swift; sourceTree = "<group>"; };
+		FE36A9C523D15D24006586E5 /* BackspaceCompare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackspaceCompare.swift; sourceTree = "<group>"; };
+		FE36A9C723D15F94006586E5 /* BackspaceCompareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackspaceCompareTests.swift; sourceTree = "<group>"; };
 		FE56D3B723AB574800B41018 /* WordLadder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 		FE56D3BA23AB59D300B41018 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		FE56D3BE23B06D5B00B41018 /* GuessNumberII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberII.swift; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 				84C7812723C76284004F0827 /* DuplicateZerosTests.swift */,
 				84C7812B23CAB8D9004F0827 /* LongestSubstringsKTests.swift */,
 				FE36A9C123D03C84006586E5 /* LinkedListSequenceTests.swift */,
+				FE36A9C723D15F94006586E5 /* BackspaceCompareTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				84C7812923CAB8C4004F0827 /* LongestSubstringsK.swift */,
 				84C7812D23CB1105004F0827 /* BinaryTreeMaximumPathSum.swift */,
 				84C7813023CB4216004F0827 /* CourseScheduleII.swift */,
+				FE36A9C523D15D24006586E5 /* BackspaceCompare.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -491,6 +497,7 @@
 				84EA7BEB23967AC40065CAD0 /* RabinKarp.swift in Sources */,
 				84EA7BDD238D3B410065CAD0 /* MeetingRooms.swift in Sources */,
 				84EA7BF5239A7F600065CAD0 /* RepeatedDNA.swift in Sources */,
+				FE36A9C623D15D24006586E5 /* BackspaceCompare.swift in Sources */,
 				841D4763238038330044534B /* ViewController.swift in Sources */,
 				84EA7BED23967DCA0065CAD0 /* RollingHash.swift in Sources */,
 				841D475F238038330044534B /* AppDelegate.swift in Sources */,
@@ -549,6 +556,7 @@
 				84C780FA23B99769004F0827 /* ShortestWayTests.swift in Sources */,
 				844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */,
 				84C780FE23B9EEEE004F0827 /* NextPermutationTests.swift in Sources */,
+				FE36A9C823D15F94006586E5 /* BackspaceCompareTests.swift in Sources */,
 				84C7812023C3628D004F0827 /* TrieTests.swift in Sources */,
 				84C780FC23B9EEC9004F0827 /* NextPermutation.swift in Sources */,
 				84C7810B23BDCF79004F0827 /* KnightProbabilityTests.swift in Sources */,
