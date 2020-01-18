@@ -15,8 +15,8 @@ class ShortestDistance {
             // currentPosition + direction is out of bound or maze[newPos] == 1
         // How to know when to stop DFS?
             // when we reach a cell that we visited before with longer path as in sum dictionary
-        // TIME COMPLEXITY: ?
-        // SPACE COMPLEXITY: ?
+        // TIME COMPLEXITY: O(m * n * max(m, n))
+        // SPACE COMPLEXITY: O(m * n)
         // what is the best time complexity we can think of ?
         M = maze.count
         N = maze[0].count
@@ -60,8 +60,8 @@ class ShortestDistance {
             // currentPosition + direction is out of bound or maze[newPos] == 1
         // How to know when to stop DFS?
             // when we reach a cell that we visited before with longer path as in sum dictionary
-        // TIME COMPLEXITY: ?
-        // SPACE COMPLEXITY: ?
+        // TIME COMPLEXITY: O(m * n * max(m, n))
+        // SPACE COMPLEXITY: O(m * n)
         // what is the best time complexity we can think of ?
         M = maze.count
         N = maze[0].count
