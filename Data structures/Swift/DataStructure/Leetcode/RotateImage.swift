@@ -11,24 +11,27 @@ import Foundation
 class RotateImage {
     func rotate(_ matrix: inout [[Int]]) {
         // for layer in 1 ... n/2
-            // swap parts in each layer
             // each layer includes 4 parts:
-                // [layer - 1, layer - 1] -> [layer - 1, n - 1 - layer]
-                // [layer - 1, n - layer] -> [n - 1 - layer, n - layer]
-                // [n - layer, n - layer] -> [n - layer, layer]
-                // [n - layer, layer - 1] -> [layer, layer - 1]
+                // top = [layer - 1][i] with i in [layer - 1, n - 1 - layer]
+                // or top = [layer - 1][i -1] with i in [layer, n - layer]
+                // right = [i][n - layer] with i in [layer - 1, n - 1 - layer]
+                // or right = [i - 1][n - layer] with i in [layer, n - layer]
+                // bottom = [n - layer][i] with i in [n - layer, layer]
+                // or bottom = [n - layer][n - i] with i in [layer, n - layer]
+                // left = [i][layer - 1] with i in [n - layer, layer]
+                // or left = [n - i][layer - 1] with i in [layer, n - layer]
+
+            // create a temporary array to store left
+            // swap bottom -> left, right -> bottom, top -> right, temporary -> top
+
         let n = matrix.count
         for layer in 1 ... n/2 {
-            var tmp = [Int]()
             for i in layer ... n - layer {
-                tmp.append(matrix[i][layer - 1])
-            }
-
-            for i in layer ... n - layer {
-                matrix[i][layer - 1] = matrix[n - layer][i]
-                matrix[n - layer][i] = matrix[n - 1 - i][n - layer]
-                matrix[n - 1 - i][n - layer] = matrix[layer - 1][n - 1 - i]
-                matrix[layer - 1][n - 1 - i] = tmp[i - layer]
+                let tmp = matrix[n - i][layer - 1]
+                matrix[n - i][layer - 1] = matrix[n - layer][n - i]
+                matrix[n - layer][n - i] = matrix[i - 1][n - layer]
+                matrix[i - 1][n - layer] = matrix[layer - 1][i - 1]
+                matrix[layer - 1][i - 1] = tmp
             }
         }
     }
