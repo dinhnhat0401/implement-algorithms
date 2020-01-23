@@ -58,3 +58,27 @@ class LinkedListSequence<T>: Sequence, IteratorProtocol {
     private var current: Element?
     private var head: Element?
 }
+
+extension LinkedListNode1: Sequence {
+    typealias Iterator = LinkedListIterator<T>
+
+    func makeIterator() -> Iterator {
+        return LinkedListIterator(self)
+    }
+}
+
+class LinkedListIterator<T>: IteratorProtocol {
+    typealias Element = LinkedListNode1<T>
+
+    init(_ head: Element?) {
+        self.current = head
+    }
+
+    func next() -> Element? {
+        let result = current
+        current = current?.next
+        return result
+    }
+
+    private var current: Element?
+}

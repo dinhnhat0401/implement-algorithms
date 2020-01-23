@@ -56,4 +56,27 @@ class LinkedListSequenceTests: XCTestCase {
             }
         }
     }
+
+    func test2() {
+        let head = LinkedListNode1(1)
+        head.next = LinkedListNode1(2)
+        head.next!.next = LinkedListNode1(3)
+
+        var enumerated = false
+        for (i, n) in head.enumerated() {
+            enumerated = true
+            if i == 0 {
+                XCTAssertEqual(n.val, 1)
+            }
+
+            if i == 1 {
+                XCTAssertEqual(n.val, 2)
+            }
+
+            if i == 2 {
+                XCTAssertEqual(n.val, 3)
+            }
+        }
+        XCTAssertEqual(enumerated, true)
+    }
 }
