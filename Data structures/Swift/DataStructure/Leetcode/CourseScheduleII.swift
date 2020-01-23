@@ -11,18 +11,32 @@ import Foundation
 class CourseScheduleII {
     func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
         // go throught list of prerequisites to create list of adjacency vertices
-        // initizalie a finished set to contain finished course
+        // initialize a finished set to store finished courses
+        // initialize a visiting set to store visiting courses
+        // initialize a result stack to store result
         // for i from 0 ..< n
-            // initialize a visited set, contains visited course
-            // if course i is not finished
-                // push dfs(i, visited) to finished list
+            // if course i is not included in finished -> O(1)
+                // if dfs(i, visited) is false
+                    // return an empty array
+        // return result.reversed()
 
-        // func dfs(i, visited)
+        // func dfs(i, visited) -> Bool
+            // MARK i as visiting
             // for each prerequisite course p
-                // if course p is not finished and is not visited
-                    // mark p as visited
-                    // try to dfs(p)
-            // return i
+                // if course p is included in visiting
+                    // return false since cycle is included
+                // if course p is finished
+                    // CONTINUE since we don't need to care about this couse any more
+                    // SHOULDN'T RETURN true here since we still need to handle other prerequisites
+                // if dfs(p) is false
+                    // return false since cycle is included
+
+            // remove i from visiting to finished
+            // push i to result
+            // return true
+
+        // TIME COMPLEXITY: O(C + P) with C is number of courses, P is number of prerequisites
+        // SPACE COMPLEXITY: O(C)
         var adj = [Int: [Int]]()
         for pre in prerequisites {
             if adj[pre[0]] == nil {
@@ -31,40 +45,43 @@ class CourseScheduleII {
             adj[pre[0]]!.append(pre[1])
         }
 
-        var finished = [Int]()
-        var courses = Set<Int>()
+        var finished = Set<Int>()
+        var visiting = Set<Int>()
+        var result = [Int]()
+
         for i in 0 ..< numCourses {
-            courses.insert(i)
-        }
-        while courses.count > 0 {
-            let i = courses.first!
-            var visited = Set<Int>()
             if !finished.contains(i) {
-                let nextCourse = dfsVisit(i, adj, &visited, courses)
-                guard nextCourse != -1 else {
+                if !dfsVisit(i, adj, &visiting, &finished, &result) {
                     return []
                 }
-                finished.append(nextCourse)
-                courses.remove(nextCourse)
             }
         }
 
-        return finished
+        return result
     }
 
-    func dfsVisit(_ i:Int, _ adj:[Int: [Int]], _ visited: inout Set<Int>, _ courses: Set<Int>) -> Int {
+    func dfsVisit(_ i:Int, _ adj:[Int: [Int]], _ visiting: inout Set<Int>, _ finished: inout Set<Int>, _ result: inout [Int]) -> Bool {
+        visiting.insert(i)
+
         for p in adj[i] ?? [] {
-            if visited.contains(p) {
-                return -1
+            if visiting.contains(p) {
+                return false
             }
 
-            if !visited.contains(p) && courses.contains(p) {
-                visited.insert(p)
-                return dfsVisit(p, adj, &visited, courses)
+            if finished.contains(p) {
+                continue
+            }
+
+            if !dfsVisit(p, adj, &visiting, &finished, &result) {
+                return false
             }
         }
 
-        return i
+        visiting.remove(i)
+        finished.insert(i)
+        result.append(i)
+
+        return true
     }
 
     func findOrder2(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
