@@ -68,6 +68,8 @@
 		84E25EC023D5EA1F00E6DF29 /* SplitArrayLargestSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EBF23D5EA1F00E6DF29 /* SplitArrayLargestSum.swift */; };
 		84E25EC223D5EA3100E6DF29 /* SplitArrayLargestSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EC123D5EA3100E6DF29 /* SplitArrayLargestSumTests.swift */; };
 		84E25EC423D8AD0E00E6DF29 /* CourseScheduleIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EC323D8AD0E00E6DF29 /* CourseScheduleIITests.swift */; };
+		84E25EC823D9CE7C00E6DF29 /* CountCompleteTreeNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EC523D9CDEB00E6DF29 /* CountCompleteTreeNodes.swift */; };
+		84E25ECA23D9DD1500E6DF29 /* CountCompleteTreeNodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EC923D9DD1500E6DF29 /* CountCompleteTreeNodesTests.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -174,6 +176,8 @@
 		84E25EBF23D5EA1F00E6DF29 /* SplitArrayLargestSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitArrayLargestSum.swift; sourceTree = "<group>"; };
 		84E25EC123D5EA3100E6DF29 /* SplitArrayLargestSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitArrayLargestSumTests.swift; sourceTree = "<group>"; };
 		84E25EC323D8AD0E00E6DF29 /* CourseScheduleIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleIITests.swift; sourceTree = "<group>"; };
+		84E25EC523D9CDEB00E6DF29 /* CountCompleteTreeNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCompleteTreeNodes.swift; sourceTree = "<group>"; };
+		84E25EC923D9DD1500E6DF29 /* CountCompleteTreeNodesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCompleteTreeNodesTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -293,6 +297,7 @@
 				84E25EBD23D4941100E6DF29 /* CrackingTheSafeTests.swift */,
 				84E25EC123D5EA3100E6DF29 /* SplitArrayLargestSumTests.swift */,
 				84E25EC323D8AD0E00E6DF29 /* CourseScheduleIITests.swift */,
+				84E25EC923D9DD1500E6DF29 /* CountCompleteTreeNodesTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 				84E25EB423D4183D00E6DF29 /* DeleteLeafWithGivenValue.swift */,
 				84E25EBB23D48F2D00E6DF29 /* CrackingTheSafe.swift */,
 				84E25EBF23D5EA1F00E6DF29 /* SplitArrayLargestSum.swift */,
+				84E25EC523D9CDEB00E6DF29 /* CountCompleteTreeNodes.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -572,6 +578,7 @@
 				84EA7BF9239D39EA0065CAD0 /* SymmetricTree.swift in Sources */,
 				84E25EB923D4194300E6DF29 /* DeleteLeafWithGivenValue.swift in Sources */,
 				84EA7BF7239D26720065CAD0 /* FlattenMap.swift in Sources */,
+				84E25EC823D9CE7C00E6DF29 /* CountCompleteTreeNodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +625,7 @@
 				84C780F623B8C24D004F0827 /* ConfusingNumberTests.swift in Sources */,
 				84C7812823C76284004F0827 /* DuplicateZerosTests.swift in Sources */,
 				84C7810523BCE72C004F0827 /* MinDistanceTests.swift in Sources */,
+				84E25ECA23D9DD1500E6DF29 /* CountCompleteTreeNodesTests.swift in Sources */,
 				84C7811B23BF815B004F0827 /* AddBoldTagTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
