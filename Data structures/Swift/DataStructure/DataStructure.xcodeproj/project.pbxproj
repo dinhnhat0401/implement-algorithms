@@ -76,6 +76,8 @@
 		84E25ED423DBDEA800E6DF29 /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25ECF23DBDE2000E6DF29 /* Test2.swift */; };
 		84E25ED623DC8C4C00E6DF29 /* MinimumCostToHireKWorkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25ED523DC8C4C00E6DF29 /* MinimumCostToHireKWorkers.swift */; };
 		84E25ED823DC8C5E00E6DF29 /* MinimumCostToHireKWorkersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25ED723DC8C5E00E6DF29 /* MinimumCostToHireKWorkersTests.swift */; };
+		84E25EDA23DDC84A00E6DF29 /* KthLargestElementInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25ED923DDC84A00E6DF29 /* KthLargestElementInArray.swift */; };
+		84E25EDC23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EDB23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -190,6 +192,8 @@
 		84E25ED123DBDE3A00E6DF29 /* Test2s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2s.swift; sourceTree = "<group>"; };
 		84E25ED523DC8C4C00E6DF29 /* MinimumCostToHireKWorkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCostToHireKWorkers.swift; sourceTree = "<group>"; };
 		84E25ED723DC8C5E00E6DF29 /* MinimumCostToHireKWorkersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCostToHireKWorkersTests.swift; sourceTree = "<group>"; };
+		84E25ED923DDC84A00E6DF29 /* KthLargestElementInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargestElementInArray.swift; sourceTree = "<group>"; };
+		84E25EDB23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargestElementInArrayTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -313,6 +317,7 @@
 				84E25ECD23DBDA7200E6DF29 /* Tests.swift */,
 				84E25ED123DBDE3A00E6DF29 /* Test2s.swift */,
 				84E25ED723DC8C5E00E6DF29 /* MinimumCostToHireKWorkersTests.swift */,
+				84E25EDB23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -393,6 +398,7 @@
 				84E25ECB23DBDA0700E6DF29 /* Test.swift */,
 				84E25ECF23DBDE2000E6DF29 /* Test2.swift */,
 				84E25ED523DC8C4C00E6DF29 /* MinimumCostToHireKWorkers.swift */,
+				84E25ED923DDC84A00E6DF29 /* KthLargestElementInArray.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -618,6 +624,7 @@
 				FE36A9C223D03C84006586E5 /* LinkedListSequenceTests.swift in Sources */,
 				84E25ED623DC8C4C00E6DF29 /* MinimumCostToHireKWorkers.swift in Sources */,
 				84C7810323BCE716004F0827 /* MinDistance.swift in Sources */,
+				84E25EDA23DDC84A00E6DF29 /* KthLargestElementInArray.swift in Sources */,
 				84E25ED223DBDE3A00E6DF29 /* Test2s.swift in Sources */,
 				84E25EB123D35EF100E6DF29 /* ShortestDistance.swift in Sources */,
 				84E25EC223D5EA3100E6DF29 /* SplitArrayLargestSumTests.swift in Sources */,
@@ -640,6 +647,7 @@
 				84C7810923BDC7B9004F0827 /* KnightProbability.swift in Sources */,
 				84C7810F23BDE724004F0827 /* IslandPerimeterTests.swift in Sources */,
 				84C780E023AF2A46004F0827 /* NumberOfIsland2Test.swift in Sources */,
+				84E25EDC23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift in Sources */,
 				84C7811523BEF603004F0827 /* MaxArea.swift in Sources */,
 				84C7811923BF811C004F0827 /* AddBoldTag.swift in Sources */,
 				84E25EB323D35F0300E6DF29 /* ShortestDistanceTests.swift in Sources */,
