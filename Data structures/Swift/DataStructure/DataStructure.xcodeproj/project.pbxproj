@@ -78,6 +78,8 @@
 		84E25ED823DC8C5E00E6DF29 /* MinimumCostToHireKWorkersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25ED723DC8C5E00E6DF29 /* MinimumCostToHireKWorkersTests.swift */; };
 		84E25EDA23DDC84A00E6DF29 /* KthLargestElementInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25ED923DDC84A00E6DF29 /* KthLargestElementInArray.swift */; };
 		84E25EDC23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EDB23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift */; };
+		84E25EE023DF023700E6DF29 /* FindCityWithSmallestNumberOfNeighborsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EDF23DF023700E6DF29 /* FindCityWithSmallestNumberOfNeighborsTests.swift */; };
+		84E25EE323DF02D000E6DF29 /* FindCityWithSmallestNumberOfNeighbors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EDD23DF021300E6DF29 /* FindCityWithSmallestNumberOfNeighbors.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -194,6 +196,8 @@
 		84E25ED723DC8C5E00E6DF29 /* MinimumCostToHireKWorkersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCostToHireKWorkersTests.swift; sourceTree = "<group>"; };
 		84E25ED923DDC84A00E6DF29 /* KthLargestElementInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargestElementInArray.swift; sourceTree = "<group>"; };
 		84E25EDB23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargestElementInArrayTests.swift; sourceTree = "<group>"; };
+		84E25EDD23DF021300E6DF29 /* FindCityWithSmallestNumberOfNeighbors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCityWithSmallestNumberOfNeighbors.swift; sourceTree = "<group>"; };
+		84E25EDF23DF023700E6DF29 /* FindCityWithSmallestNumberOfNeighborsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCityWithSmallestNumberOfNeighborsTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -318,6 +322,7 @@
 				84E25ED123DBDE3A00E6DF29 /* Test2s.swift */,
 				84E25ED723DC8C5E00E6DF29 /* MinimumCostToHireKWorkersTests.swift */,
 				84E25EDB23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift */,
+				84E25EDF23DF023700E6DF29 /* FindCityWithSmallestNumberOfNeighborsTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 				84E25ECF23DBDE2000E6DF29 /* Test2.swift */,
 				84E25ED523DC8C4C00E6DF29 /* MinimumCostToHireKWorkers.swift */,
 				84E25ED923DDC84A00E6DF29 /* KthLargestElementInArray.swift */,
+				84E25EDD23DF021300E6DF29 /* FindCityWithSmallestNumberOfNeighbors.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -592,6 +598,7 @@
 				84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */,
 				841D4761238038330044534B /* SceneDelegate.swift in Sources */,
 				FE56D3B823AB574900B41018 /* WordLadder.swift in Sources */,
+				84E25EE323DF02D000E6DF29 /* FindCityWithSmallestNumberOfNeighbors.swift in Sources */,
 				84EA7BD423895BDD0065CAD0 /* MergeKSortedLists.swift in Sources */,
 				841D4792238038D20044534B /* Graph.swift in Sources */,
 				84C780EF23B637BE004F0827 /* StudentScore.swift in Sources */,
@@ -612,6 +619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E25EE023DF023700E6DF29 /* FindCityWithSmallestNumberOfNeighborsTests.swift in Sources */,
 				84C7812423C4D4EF004F0827 /* RotateImageTests.swift in Sources */,
 				84C7810723BCFB4F004F0827 /* AddTwoNumbers.swift in Sources */,
 				84C7812623C7626C004F0827 /* DuplicateZeros.swift in Sources */,
