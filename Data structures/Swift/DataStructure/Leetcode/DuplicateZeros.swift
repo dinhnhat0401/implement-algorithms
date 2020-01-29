@@ -11,39 +11,38 @@ import Foundation
 class DuplicateZeros {
     func duplicateZeros(_ arr: inout [Int]) {
         // for the first loop from begining to the end of arr
-            // each time we found a zero, change value of last non -1 value to -1 index j
-            // e.g: 1 0 0 2 => 1 0 0 -1
-        // for the second loop go from the end of array to the begining
-            // try to shifting elements to the last of array and also dupliate 0 if we found any
+            // each time we found a zero add one to zeroCount
+        // zeroCount will contain number of zeros in arr
+        // while zeroCount > 0 && j >= 0
+            // if arr[j] == 0
+                // decrease zeroCount
+                // if j + zeroCount < N
+                    // arr[j + zeroCount] = 0
+                // if j + zeroCount + 1 < N
+                    // arr[j + zeroCount + 1] = 0
+            // else
+                // fill in arr[j] for arr[j + zeroCount]
 
         let N = arr.count
-        var changeIndex = N - 1
+        var zeroCount = 0
         for i in 0 ..< N {
-            if arr[i] == 0 && i < changeIndex {
-                arr[changeIndex] = -1
-                changeIndex -= 1
+            if arr[i] == 0 {
+                zeroCount += 1
             }
         }
 
         var j = N - 1
-        while j >= 0 {
-            if arr[j] != -1 {
-                break
-            }
-            j -= 1
-        }
-
-        while j >= 0 {
-            var k = j + 1
-            while k < N && arr[k] == -1 {
-                k += 1
+        while zeroCount > 0 && j >= 0 {
+            if arr[j] == 0 {
+                zeroCount -= 1
             }
 
-            arr[k] = arr[j]
-            if arr[j] == 0 && j < k - 1 {
-                arr[k - 1] = 0
+            if j + zeroCount < N {
+                arr[j + zeroCount] = arr[j]
             }
-            arr[j] = -1
+            if arr[j] == 0 && j + zeroCount + 1 < N {
+                arr[j + zeroCount + 1] = arr[j]
+            }
 
             j -= 1
         }

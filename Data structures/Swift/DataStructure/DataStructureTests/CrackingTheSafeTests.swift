@@ -15,7 +15,7 @@ class CrackingTheSafeTests: XCTestCase {
     }
 
     func test2() {
-        XCTAssertEqual(CrackingTheSafe().crackSafe(1, 1), "01")
+        XCTAssertEqual(CrackingTheSafe().crackSafe(1, 1), "0")
     }
 
     func test3() {

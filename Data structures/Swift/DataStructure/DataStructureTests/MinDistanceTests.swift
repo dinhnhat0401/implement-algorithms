@@ -12,6 +12,6 @@ import XCTest
 class MinDistanceTests: XCTestCase {
     func test1() {
         XCTAssertEqual(MinDistance().minDistance("horse", "ros"), 3)
-        XCTAssertEqual(MinDistance().minDistance("intention", "execution"), 3)
+        XCTAssertEqual(MinDistance().minDistance("intention", "execution"), 5)
     }
 }
