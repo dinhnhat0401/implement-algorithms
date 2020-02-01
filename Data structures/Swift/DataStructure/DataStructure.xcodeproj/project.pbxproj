@@ -82,6 +82,8 @@
 		84E25EE323DF02D000E6DF29 /* FindCityWithSmallestNumberOfNeighbors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EDD23DF021300E6DF29 /* FindCityWithSmallestNumberOfNeighbors.swift */; };
 		84E25EE723E05A2E00E6DF29 /* MinDifficultyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EE623E05A2E00E6DF29 /* MinDifficultyTests.swift */; };
 		84E25EE923E05AB300E6DF29 /* MinDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EE423E05A1400E6DF29 /* MinDifficulty.swift */; };
+		84E25EEB23E5AC8A00E6DF29 /* MinWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EEA23E5AC8A00E6DF29 /* MinWindow.swift */; };
+		84E25EED23E5AC9900E6DF29 /* MinWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EEC23E5AC9900E6DF29 /* MinWindowTests.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -202,6 +204,8 @@
 		84E25EDF23DF023700E6DF29 /* FindCityWithSmallestNumberOfNeighborsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCityWithSmallestNumberOfNeighborsTests.swift; sourceTree = "<group>"; };
 		84E25EE423E05A1400E6DF29 /* MinDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinDifficulty.swift; sourceTree = "<group>"; };
 		84E25EE623E05A2E00E6DF29 /* MinDifficultyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinDifficultyTests.swift; sourceTree = "<group>"; };
+		84E25EEA23E5AC8A00E6DF29 /* MinWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinWindow.swift; sourceTree = "<group>"; };
+		84E25EEC23E5AC9900E6DF29 /* MinWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinWindowTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -328,6 +332,7 @@
 				84E25EDB23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift */,
 				84E25EDF23DF023700E6DF29 /* FindCityWithSmallestNumberOfNeighborsTests.swift */,
 				84E25EE623E05A2E00E6DF29 /* MinDifficultyTests.swift */,
+				84E25EEC23E5AC9900E6DF29 /* MinWindowTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 				84E25ED923DDC84A00E6DF29 /* KthLargestElementInArray.swift */,
 				84E25EDD23DF021300E6DF29 /* FindCityWithSmallestNumberOfNeighbors.swift */,
 				84E25EE423E05A1400E6DF29 /* MinDifficulty.swift */,
+				84E25EEA23E5AC8A00E6DF29 /* MinWindow.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -582,6 +588,7 @@
 				84C6C66023A7BF3C008B6B75 /* ShortestPathInAGrid.swift in Sources */,
 				84EA7BE823952E6E0065CAD0 /* FourSum.swift in Sources */,
 				84C7812F23CB1142004F0827 /* BinaryTreeMaximumPathSum.swift in Sources */,
+				84E25EEB23E5AC8A00E6DF29 /* MinWindow.swift in Sources */,
 				84C780E923B10033004F0827 /* AllPathsFromSourceToTarget.swift in Sources */,
 				84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */,
 				84C780DC23AE4859004F0827 /* NumberOfIslands.swift in Sources */,
@@ -642,6 +649,7 @@
 				84E25EDA23DDC84A00E6DF29 /* KthLargestElementInArray.swift in Sources */,
 				84E25ED223DBDE3A00E6DF29 /* Test2s.swift in Sources */,
 				84E25EB123D35EF100E6DF29 /* ShortestDistance.swift in Sources */,
+				84E25EED23E5AC9900E6DF29 /* MinWindowTests.swift in Sources */,
 				84E25EC223D5EA3100E6DF29 /* SplitArrayLargestSumTests.swift in Sources */,
 				84C7811723BEF61B004F0827 /* MaxAreaTests.swift in Sources */,
 				84E25EAF23D2F68900E6DF29 /* MonarchyImplementationTests.swift in Sources */,
