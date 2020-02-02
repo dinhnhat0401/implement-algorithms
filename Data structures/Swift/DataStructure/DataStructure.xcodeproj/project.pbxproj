@@ -84,6 +84,8 @@
 		84E25EE923E05AB300E6DF29 /* MinDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EE423E05A1400E6DF29 /* MinDifficulty.swift */; };
 		84E25EEB23E5AC8A00E6DF29 /* MinWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EEA23E5AC8A00E6DF29 /* MinWindow.swift */; };
 		84E25EED23E5AC9900E6DF29 /* MinWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EEC23E5AC9900E6DF29 /* MinWindowTests.swift */; };
+		84E25EEF23E5D5CD00E6DF29 /* KthClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EEE23E5D5CD00E6DF29 /* KthClosest.swift */; };
+		84E25EF123E5D5F000E6DF29 /* KthClosestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25EF023E5D5F000E6DF29 /* KthClosestTests.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -206,6 +208,8 @@
 		84E25EE623E05A2E00E6DF29 /* MinDifficultyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinDifficultyTests.swift; sourceTree = "<group>"; };
 		84E25EEA23E5AC8A00E6DF29 /* MinWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinWindow.swift; sourceTree = "<group>"; };
 		84E25EEC23E5AC9900E6DF29 /* MinWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinWindowTests.swift; sourceTree = "<group>"; };
+		84E25EEE23E5D5CD00E6DF29 /* KthClosest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthClosest.swift; sourceTree = "<group>"; };
+		84E25EF023E5D5F000E6DF29 /* KthClosestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthClosestTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -333,6 +337,7 @@
 				84E25EDF23DF023700E6DF29 /* FindCityWithSmallestNumberOfNeighborsTests.swift */,
 				84E25EE623E05A2E00E6DF29 /* MinDifficultyTests.swift */,
 				84E25EEC23E5AC9900E6DF29 /* MinWindowTests.swift */,
+				84E25EF023E5D5F000E6DF29 /* KthClosestTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 				84E25EDD23DF021300E6DF29 /* FindCityWithSmallestNumberOfNeighbors.swift */,
 				84E25EE423E05A1400E6DF29 /* MinDifficulty.swift */,
 				84E25EEA23E5AC8A00E6DF29 /* MinWindow.swift */,
+				84E25EEE23E5D5CD00E6DF29 /* KthClosest.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -660,6 +666,7 @@
 				844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */,
 				84C780FE23B9EEEE004F0827 /* NextPermutationTests.swift in Sources */,
 				FE36A9C823D15F94006586E5 /* BackspaceCompareTests.swift in Sources */,
+				84E25EF123E5D5F000E6DF29 /* KthClosestTests.swift in Sources */,
 				84C7812023C3628D004F0827 /* TrieTests.swift in Sources */,
 				84C780FC23B9EEC9004F0827 /* NextPermutation.swift in Sources */,
 				84C7810B23BDCF79004F0827 /* KnightProbabilityTests.swift in Sources */,
@@ -669,6 +676,7 @@
 				84E25EC423D8AD0E00E6DF29 /* CourseScheduleIITests.swift in Sources */,
 				84C780F823B99750004F0827 /* ShortestWayToFormString.swift in Sources */,
 				84C7810923BDC7B9004F0827 /* KnightProbability.swift in Sources */,
+				84E25EEF23E5D5CD00E6DF29 /* KthClosest.swift in Sources */,
 				84C7810F23BDE724004F0827 /* IslandPerimeterTests.swift in Sources */,
 				84C780E023AF2A46004F0827 /* NumberOfIsland2Test.swift in Sources */,
 				84E25EDC23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift in Sources */,
