@@ -102,6 +102,8 @@
 		84E25F0E23F3056100E6DF29 /* ValidTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F0D23F3056100E6DF29 /* ValidTree.swift */; };
 		84E25F1023F3058700E6DF29 /* ValidTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F0F23F3058700E6DF29 /* ValidTreeTests.swift */; };
 		84E25F1323F3C20400E6DF29 /* MinimumHeightTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F1123F3C1FD00E6DF29 /* MinimumHeightTrees.swift */; };
+		84E25F1523F42F8100E6DF29 /* AlienDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F1423F42F8100E6DF29 /* AlienDictionary.swift */; };
+		84E25F1723F42F9700E6DF29 /* AlienDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F1623F42F9700E6DF29 /* AlienDictionaryTests.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -242,6 +244,8 @@
 		84E25F0D23F3056100E6DF29 /* ValidTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidTree.swift; sourceTree = "<group>"; };
 		84E25F0F23F3058700E6DF29 /* ValidTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidTreeTests.swift; sourceTree = "<group>"; };
 		84E25F1123F3C1FD00E6DF29 /* MinimumHeightTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumHeightTrees.swift; sourceTree = "<group>"; };
+		84E25F1423F42F8100E6DF29 /* AlienDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienDictionary.swift; sourceTree = "<group>"; };
+		84E25F1623F42F9700E6DF29 /* AlienDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienDictionaryTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -378,6 +382,7 @@
 				84E25F0523EED9F100E6DF29 /* CanFinishTests.swift */,
 				84E25F0923EF026300E6DF29 /* SubArraysTests.swift */,
 				84E25F0F23F3058700E6DF29 /* ValidTreeTests.swift */,
+				84E25F1623F42F9700E6DF29 /* AlienDictionaryTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -471,6 +476,7 @@
 				84E25F0723EF025400E6DF29 /* SubArrays.swift */,
 				84E25F0D23F3056100E6DF29 /* ValidTree.swift */,
 				84E25F1123F3C1FD00E6DF29 /* MinimumHeightTrees.swift */,
+				84E25F1423F42F8100E6DF29 /* AlienDictionary.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -735,10 +741,12 @@
 				84C780F823B99750004F0827 /* ShortestWayToFormString.swift in Sources */,
 				84E25F0823EF025400E6DF29 /* SubArrays.swift in Sources */,
 				84C7810923BDC7B9004F0827 /* KnightProbability.swift in Sources */,
+				84E25F1723F42F9700E6DF29 /* AlienDictionaryTests.swift in Sources */,
 				84E25EEF23E5D5CD00E6DF29 /* KthClosest.swift in Sources */,
 				84C7810F23BDE724004F0827 /* IslandPerimeterTests.swift in Sources */,
 				84C780E023AF2A46004F0827 /* NumberOfIsland2Test.swift in Sources */,
 				84E25EDC23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift in Sources */,
+				84E25F1523F42F8100E6DF29 /* AlienDictionary.swift in Sources */,
 				84C7811523BEF603004F0827 /* MaxArea.swift in Sources */,
 				84E25EF923EC4A3700E6DF29 /* EvaluateDivisionTests.swift in Sources */,
 				84C7811923BF811C004F0827 /* AddBoldTag.swift in Sources */,
