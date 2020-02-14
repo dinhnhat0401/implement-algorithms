@@ -106,6 +106,8 @@
 		84E25F1723F42F9700E6DF29 /* AlienDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F1623F42F9700E6DF29 /* AlienDictionaryTests.swift */; };
 		84E25F1923F5894400E6DF29 /* RegionBySlashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F1823F5894400E6DF29 /* RegionBySlashes.swift */; };
 		84E25F1B23F58B2900E6DF29 /* RegionsBySlashesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F1A23F58B2900E6DF29 /* RegionsBySlashesTests.swift */; };
+		84E25F1D23F6D86800E6DF29 /* NetworkDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F1C23F6D86800E6DF29 /* NetworkDelay.swift */; };
+		84E25F1F23F6D88000E6DF29 /* NetworkDelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E25F1E23F6D88000E6DF29 /* NetworkDelayTests.swift */; };
 		84EA7BCA238132A60065CAD0 /* SentenceSimilarityII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */; };
 		84EA7BCD23815AAF0065CAD0 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */; };
 		84EA7BD223891A0B0065CAD0 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BD123891A0B0065CAD0 /* Heap.swift */; };
@@ -250,6 +252,8 @@
 		84E25F1623F42F9700E6DF29 /* AlienDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienDictionaryTests.swift; sourceTree = "<group>"; };
 		84E25F1823F5894400E6DF29 /* RegionBySlashes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionBySlashes.swift; sourceTree = "<group>"; };
 		84E25F1A23F58B2900E6DF29 /* RegionsBySlashesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsBySlashesTests.swift; sourceTree = "<group>"; };
+		84E25F1C23F6D86800E6DF29 /* NetworkDelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelay.swift; sourceTree = "<group>"; };
+		84E25F1E23F6D88000E6DF29 /* NetworkDelayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTests.swift; sourceTree = "<group>"; };
 		84EA7BC9238132A60065CAD0 /* SentenceSimilarityII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityII.swift; sourceTree = "<group>"; };
 		84EA7BCC23815AAF0065CAD0 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		84EA7BD123891A0B0065CAD0 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -388,6 +392,7 @@
 				84E25F0F23F3058700E6DF29 /* ValidTreeTests.swift */,
 				84E25F1623F42F9700E6DF29 /* AlienDictionaryTests.swift */,
 				84E25F1A23F58B2900E6DF29 /* RegionsBySlashesTests.swift */,
+				84E25F1E23F6D88000E6DF29 /* NetworkDelayTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -483,6 +488,7 @@
 				84E25F1123F3C1FD00E6DF29 /* MinimumHeightTrees.swift */,
 				84E25F1423F42F8100E6DF29 /* AlienDictionary.swift */,
 				84E25F1823F5894400E6DF29 /* RegionBySlashes.swift */,
+				84E25F1C23F6D86800E6DF29 /* NetworkDelay.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -722,6 +728,7 @@
 				84E25EDA23DDC84A00E6DF29 /* KthLargestElementInArray.swift in Sources */,
 				84E25ED223DBDE3A00E6DF29 /* Test2s.swift in Sources */,
 				84E25EB123D35EF100E6DF29 /* ShortestDistance.swift in Sources */,
+				84E25F1D23F6D86800E6DF29 /* NetworkDelay.swift in Sources */,
 				84E25F1023F3058700E6DF29 /* ValidTreeTests.swift in Sources */,
 				84E25EED23E5AC9900E6DF29 /* MinWindowTests.swift in Sources */,
 				84E25EC223D5EA3100E6DF29 /* SplitArrayLargestSumTests.swift in Sources */,
@@ -732,6 +739,7 @@
 				84C7811123BE1B1B004F0827 /* ReorderList.swift in Sources */,
 				84E25EE723E05A2E00E6DF29 /* MinDifficultyTests.swift in Sources */,
 				84C780FA23B99769004F0827 /* ShortestWayTests.swift in Sources */,
+				84E25F1F23F6D88000E6DF29 /* NetworkDelayTests.swift in Sources */,
 				844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */,
 				84C780FE23B9EEEE004F0827 /* NextPermutationTests.swift in Sources */,
 				FE36A9C823D15F94006586E5 /* BackspaceCompareTests.swift in Sources */,
