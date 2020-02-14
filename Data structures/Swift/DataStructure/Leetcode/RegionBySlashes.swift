@@ -23,17 +23,17 @@ class RegionBySlashes {
             let s = Array(grid[r])
             for c in 0 ..< N {
                 if r > 0 {
-                    uf.union(uf.makeSet(g(r - 1, c, 3)), uf.makeSet(g(r, c, 1)))
+                    uf.union(uf.makeSet(g(r - 1, c, 2)), uf.makeSet(g(r, c, 0)))
                 }
                 if c > 0 {
-                    uf.union(uf.makeSet(g(r, c - 1, 2)), uf.makeSet(g(r, c, 0)))
+                    uf.union(uf.makeSet(g(r, c - 1, 3)), uf.makeSet(g(r, c, 1)))
                 }
-                if s[c] == "\\" {
+                if s[c] != "/" {
                     uf.union(uf.makeSet(g(r, c, 0)), uf.makeSet(g(r, c, 3)))
                     uf.union(uf.makeSet(g(r, c, 1)), uf.makeSet(g(r, c, 2)))
                 }
 
-                if s[c] == "/" {
+                if s[c] != "\\" {
                     uf.union(uf.makeSet(g(r, c, 0)), uf.makeSet(g(r, c, 1)))
                     uf.union(uf.makeSet(g(r, c, 2)), uf.makeSet(g(r, c, 3)))
                 }
