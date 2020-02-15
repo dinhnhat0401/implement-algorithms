@@ -74,4 +74,75 @@ class RedundantConnection {
 
         return Set<[Int]>()
     }
+
+    func findRedundantConnection2(_ edges: [[Int]]) -> [Int] {
+        let uf = UnionFind684(1001)
+        for e in edges {
+            uf.make(e[0])
+            uf.make(e[1])
+            if !uf.union(e[0], e[1]) {
+                return e
+            }
+        }
+
+        return []
+    }
 }
+
+class UnionFind684 {
+    init(_ size: Int) {
+        rank = [Int](repeating: -1, count: size)
+        p = [Int](repeating: -1, count: size)
+    }
+
+    func make(_ i: Int) {
+        guard p[i] == -1 else {
+            return
+        }
+
+        p[i] = i
+        rank[i] = 0
+    }
+
+    func find(_ i: Int) -> Int {
+        var i = i
+        var j = i
+        while i != p[i] {
+            i = p[i]
+        }
+
+        while j != p[j] {
+            j = p[j]
+        }
+
+        return i
+    }
+
+    func union(_ x: Int, _ y: Int) -> Bool {
+        let rootX = find(x)
+        let rootY = find(y)
+
+        if rootX == rootY {
+            return false
+        }
+
+        link(rootX, rootY)
+        return true
+    }
+
+    func link(_ x: Int, _ y: Int) {
+        if rank[x] >= rank[y] {
+            p[y] = x
+            if rank[x] == rank[y] {
+                rank[x] += 1
+            }
+        } else {
+            p[x] = y
+        }
+    }
+
+    // var nodes: [Int]
+    var rank: [Int]
+    var p: [Int]
+}
+
