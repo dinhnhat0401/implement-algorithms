@@ -8,16 +8,24 @@
 
 import Foundation
 class NetworkDelay {
+    let MAX_TIME = 100 * 600
     func networkDelayTime(_ times: [[Int]], _ N: Int, _ K: Int) -> Int {
         var g = [[[Int]]](repeating: [], count: N)
         for t in times {
             g[t[0] - 1].append([t[1] - 1, t[2]])
         }
 
-        var dist = [Int](repeating: Int.max, count: N)
+        var dist = [Int](repeating: MAX_TIME, count: N)
         dist[K - 1] = 0
         let q = PriorityQueue743(N)
-        q.add([K - 1, 0])
+        for i in 0 ..< N {
+            if i == K - 1 {
+                q.add([i, 0])
+                continue
+            }
+            q.add([i, MAX_TIME])
+        }
+
         var visited = Set<[Int]>()
         while q.size > 0 {
             let n = q.extractMin()
@@ -28,8 +36,8 @@ class NetworkDelay {
             for nei in g[n[0]] {
                 if dist[nei[0]] > dist[n[0]] + nei[1] {
                     dist[nei[0]] = dist[n[0]] + nei[1]
+                    q.change(nei[0], [nei[0], dist[nei[0]]])
                 }
-                q.add(nei)
             }
             visited.insert(n)
         }
@@ -39,13 +47,14 @@ class NetworkDelay {
             maxV = max(maxV, dist[i])
         }
 
-        return maxV == Int.max ? -1 : maxV
+        return maxV == MAX_TIME ? -1 : maxV
     }
 }
 
 class PriorityQueue743 {
     init(_ maxSize: Int) {
         nodes = [[Int]](repeating: [], count: maxSize)
+        keys = [Int](repeating: 0, count: maxSize)
     }
 
     func add(_ val: [Int]) {
@@ -54,8 +63,16 @@ class PriorityQueue743 {
         }
 
         nodes[size] = val
+        keys[val[0]] = size
         size += 1
         shiftUp(size - 1)
+    }
+
+    func change(_ n: Int, _ newVal: [Int]) {
+        let i = keys[n]
+        nodes[i] = newVal
+        shiftUp(i)
+        shiftDown(i)
     }
 
     func extractMin() -> [Int] {
@@ -74,6 +91,8 @@ class PriorityQueue743 {
         var i = i
         while nodes[i][1] < nodes[parent(i)][1] {
             nodes.swapAt(i, parent(i))
+            keys[nodes[i][0]] = i
+            keys[nodes[parent(i)][0]] = parent(i)
             i = parent(i)
         }
     }
@@ -93,7 +112,10 @@ class PriorityQueue743 {
             if i == swapTo {
                 return
             }
+
             nodes.swapAt(i, swapTo)
+            keys[nodes[i][0]] = i
+            keys[nodes[swapTo][0]] = swapTo
             i = swapTo
         }
     }
@@ -112,4 +134,5 @@ class PriorityQueue743 {
 
     var size = 0
     var nodes:[[Int]]
+    var keys: [Int]
 }
