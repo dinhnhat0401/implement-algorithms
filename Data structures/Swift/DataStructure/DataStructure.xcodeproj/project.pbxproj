@@ -15,6 +15,7 @@
 		841D476B238038380044534B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841D4769238038380044534B /* LaunchScreen.storyboard */; };
 		841D4792238038D20044534B /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4791238038D20044534B /* Graph.swift */; };
 		841D47942380399F0044534B /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D47932380399F0044534B /* Node.swift */; };
+		8439910123FED0EA00ED551A /* LC990.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439910023FED0EA00ED551A /* LC990.swift */; };
 		844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */; };
 		84C6C66023A7BF3C008B6B75 /* ShortestPathInAGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */; };
 		84C780DC23AE4859004F0827 /* NumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780DB23AE4859004F0827 /* NumberOfIslands.swift */; };
@@ -167,6 +168,7 @@
 		841D4777238038380044534B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841D4791238038D20044534B /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		841D47932380399F0044534B /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		8439910023FED0EA00ED551A /* LC990.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC990.swift; sourceTree = "<group>"; };
 		844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathInAGrid.swift; sourceTree = "<group>"; };
 		84C780DB23AE4859004F0827 /* NumberOfIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfIslands.swift; sourceTree = "<group>"; };
@@ -507,6 +509,7 @@
 				84E25F2023F79CA200E6DF29 /* Bipartite.swift */,
 				84E25F2423F7BE9200E6DF29 /* RedundantConnection.swift */,
 				84E25F2823F7E9F800E6DF29 /* Reconstruction.swift */,
+				8439910023FED0EA00ED551A /* LC990.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -699,6 +702,7 @@
 				84E25F1323F3C20400E6DF29 /* MinimumHeightTrees.swift in Sources */,
 				84C780E423AF4646004F0827 /* BellmanFord.swift in Sources */,
 				FE36A9C023D0364C006586E5 /* LinkedListNode.swift in Sources */,
+				8439910123FED0EA00ED551A /* LC990.swift in Sources */,
 				841D47942380399F0044534B /* Node.swift in Sources */,
 				84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */,
 				841D4761238038330044534B /* SceneDelegate.swift in Sources */,
