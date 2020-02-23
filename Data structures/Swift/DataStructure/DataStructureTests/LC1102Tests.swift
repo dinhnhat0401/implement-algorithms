@@ -17,4 +17,8 @@ class LC1102Tests: XCTestCase {
     func test2() {
         XCTAssertEqual(LC1102().maximumMinimumPath([[3,4,6,3,4],[0,2,1,1,7],[8,8,3,2,7],[3,2,4,9,8],[4,1,2,0,0],[4,6,5,4,3]]), 3)
     }
+
+    func test3() {
+        XCTAssertEqual(LC1102().maximumMinimumPath2([[2,0,5,2,0],[2,4,4,4,3],[1,5,0,0,0],[5,4,4,3,1],[1,3,1,5,3]]), 2)
+    }
 }

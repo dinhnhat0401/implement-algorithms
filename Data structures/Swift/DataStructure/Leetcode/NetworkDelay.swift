@@ -129,7 +129,7 @@ class PriorityQueue743 {
     }
 
     func parent(_ i: Int) -> Int {
-        return i / 2
+        return (i - 1) / 2
     }
 
     var size = 0
