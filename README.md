@@ -24,8 +24,11 @@ gcc -o RemoveDups.o IANode.o  RemoveDups.m -framework Foundation
 ./RemoveDups
 ```
 
-### TODOs and NOTE
+### Patterns
 
+| Name | Type |
+|-|-|
+| 1102. Path With Maximum Minimum Value | UF, Priority Queue |
 
 ### Resources
 
