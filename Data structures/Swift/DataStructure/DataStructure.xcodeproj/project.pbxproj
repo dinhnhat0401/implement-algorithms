@@ -18,6 +18,8 @@
 		8439910123FED0EA00ED551A /* LC990.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439910023FED0EA00ED551A /* LC990.swift */; };
 		8439910324018A4400ED551A /* LC1102.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439910224018A4400ED551A /* LC1102.swift */; };
 		8439910524018A9E00ED551A /* LC1102Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439910424018A9E00ED551A /* LC1102Tests.swift */; };
+		8439910B2402C61800ED551A /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843991062402C57200ED551A /* LRUCache.swift */; };
+		8439910C2402C64500ED551A /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843991092402C5A400ED551A /* LRUCacheTests.swift */; };
 		844DFB9923ABB9450024FFD4 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */; };
 		84C6C66023A7BF3C008B6B75 /* ShortestPathInAGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */; };
 		84C780DC23AE4859004F0827 /* NumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780DB23AE4859004F0827 /* NumberOfIslands.swift */; };
@@ -173,6 +175,8 @@
 		8439910023FED0EA00ED551A /* LC990.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC990.swift; sourceTree = "<group>"; };
 		8439910224018A4400ED551A /* LC1102.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC1102.swift; sourceTree = "<group>"; };
 		8439910424018A9E00ED551A /* LC1102Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC1102Tests.swift; sourceTree = "<group>"; };
+		843991062402C57200ED551A /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
+		843991092402C5A400ED551A /* LRUCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCacheTests.swift; sourceTree = "<group>"; };
 		844DFB9823ABB9450024FFD4 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathInAGrid.swift; sourceTree = "<group>"; };
 		84C780DB23AE4859004F0827 /* NumberOfIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfIslands.swift; sourceTree = "<group>"; };
@@ -415,6 +419,7 @@
 				84E25F2623F7BEA800E6DF29 /* RedundantConnectionTests.swift */,
 				84E25F2A23F7EA0A00E6DF29 /* ReconstructionTests.swift */,
 				8439910424018A9E00ED551A /* LC1102Tests.swift */,
+				843991092402C5A400ED551A /* LRUCacheTests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -516,6 +521,7 @@
 				84E25F2823F7E9F800E6DF29 /* Reconstruction.swift */,
 				8439910023FED0EA00ED551A /* LC990.swift */,
 				8439910224018A4400ED551A /* LC1102.swift */,
+				843991062402C57200ED551A /* LRUCache.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -711,6 +717,7 @@
 				FE36A9C023D0364C006586E5 /* LinkedListNode.swift in Sources */,
 				8439910123FED0EA00ED551A /* LC990.swift in Sources */,
 				841D47942380399F0044534B /* Node.swift in Sources */,
+				8439910B2402C61800ED551A /* LRUCache.swift in Sources */,
 				84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */,
 				841D4761238038330044534B /* SceneDelegate.swift in Sources */,
 				FE56D3B823AB574900B41018 /* WordLadder.swift in Sources */,
@@ -796,6 +803,7 @@
 				84E25F1723F42F9700E6DF29 /* AlienDictionaryTests.swift in Sources */,
 				84E25EEF23E5D5CD00E6DF29 /* KthClosest.swift in Sources */,
 				84C7810F23BDE724004F0827 /* IslandPerimeterTests.swift in Sources */,
+				8439910C2402C64500ED551A /* LRUCacheTests.swift in Sources */,
 				84C780E023AF2A46004F0827 /* NumberOfIsland2Test.swift in Sources */,
 				84E25EDC23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift in Sources */,
 				84E25F1523F42F8100E6DF29 /* AlienDictionary.swift in Sources */,
