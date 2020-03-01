@@ -12,6 +12,32 @@ class EvaluateDivision {
     private var nodes = [String: Node]()
     private var weights = [[String]: Double]()
 
+    func calcEquation2(_ equations: [[String]], _ values: [Double], _ queries: [[String]]) -> [Double] {
+        var quot = [String: [String: Double]]()
+        for (i, e) in equations.enumerated() {
+            let v = values[i]
+            quot[e[0], default: [String: Double]()][e[0]] = 1.0
+            quot[e[1], default: [String: Double]()][e[1]] = 1.0
+            quot[e[0], default: [String: Double]()][e[1]] = v
+            quot[e[1], default: [String: Double]()][e[0]] = 1/v
+        }
+
+        for k in quot.keys {
+            for i in quot[k, default: [String: Double]()].keys {
+                for j in quot[k, default: [String: Double]()].keys {
+                    quot[i]![j] = quot[i]![k]! * quot[k]![j]!
+                }
+            }
+        }
+
+        var res = [Double]()
+        for q in queries {
+            res.append(quot[q[0]]?[q[1]] ?? -1.0)
+        }
+
+        return res
+    }
+
     func calcEquation(_ equations: [[String]], _ values: [Double], _ queries: [[String]]) -> [Double] {
         var result = [Double]()
         var count = 0
