@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+[null,["i love you","island","i love leetcode"],["i love you","i love leetcode"],[],[]]
 class Trie {
 
     /** Initialize your data structure here. */

@@ -6,4 +6,11 @@
 //  Copyright © 2020 Đinh Văn Nhật. All rights reserved.
 //
 
-import Foundation
+import XCTest
+@testable import DataStructure
+
+class LC221Tests: XCTestCase {
+    func test1() {
+        XCTAssertEqual(LC221().maximalSquare([["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]), 4)
+    }
+}

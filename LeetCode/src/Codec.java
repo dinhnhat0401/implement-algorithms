@@ -1,11 +1,31 @@
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
+
 public class Codec {
+
+  public static void main(String [] args) {
+    TreeNode root = new TreeNode(1);
+    root.left = new TreeNode(2);
+    root.right = new TreeNode(3);
+    root.right.left = new TreeNode(4);
+    root.right.right = new TreeNode(5);
+    String data = new Codec().serialize(root);
+    TreeNode decoded = new Codec().deserialize(data);
+  }
 
   // Encodes a tree to a single string.
   public String serialize(TreeNode root) {
     if (root == null) {
-      return "null,";
+      return "null";
     }
-    return Integer.toString(root.val) + "," + serialize(root.left) + "," + serialize(root.right) + ",";
+    return Integer.toString(root.val) + "," + serialize(root.left) + "," + serialize(root.right);
   }
 
   // Decodes your encoded data to tree.
