@@ -32,6 +32,8 @@
 		848CF41A241121890064D0D4 /* GetWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CF419241121890064D0D4 /* GetWords.swift */; };
 		848CF41C2411219A0064D0D4 /* GetWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CF41B2411219A0064D0D4 /* GetWordsTests.swift */; };
 		848CF41E24138DFF0064D0D4 /* SentenceSimilarityIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CF41D24138DFF0064D0D4 /* SentenceSimilarityIITests.swift */; };
+		848CF42024166F610064D0D4 /* LC347.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CF41F24166F610064D0D4 /* LC347.swift */; };
+		848CF42224166F840064D0D4 /* LC347Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CF42124166F840064D0D4 /* LC347Tests.swift */; };
 		84C6C66023A7BF3C008B6B75 /* ShortestPathInAGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */; };
 		84C780DC23AE4859004F0827 /* NumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780DB23AE4859004F0827 /* NumberOfIslands.swift */; };
 		84C780DE23AE6911004F0827 /* NumberOfIslands2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C780DD23AE6911004F0827 /* NumberOfIslands2.swift */; };
@@ -200,6 +202,8 @@
 		848CF419241121890064D0D4 /* GetWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWords.swift; sourceTree = "<group>"; };
 		848CF41B2411219A0064D0D4 /* GetWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWordsTests.swift; sourceTree = "<group>"; };
 		848CF41D24138DFF0064D0D4 /* SentenceSimilarityIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceSimilarityIITests.swift; sourceTree = "<group>"; };
+		848CF41F24166F610064D0D4 /* LC347.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC347.swift; sourceTree = "<group>"; };
+		848CF42124166F840064D0D4 /* LC347Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC347Tests.swift; sourceTree = "<group>"; };
 		84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathInAGrid.swift; sourceTree = "<group>"; };
 		84C780DB23AE4859004F0827 /* NumberOfIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfIslands.swift; sourceTree = "<group>"; };
 		84C780DD23AE6911004F0827 /* NumberOfIslands2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfIslands2.swift; sourceTree = "<group>"; };
@@ -448,6 +452,7 @@
 				8424C871240CD24500118CAA /* LC218Tests.swift */,
 				848CF41B2411219A0064D0D4 /* GetWordsTests.swift */,
 				848CF41D24138DFF0064D0D4 /* SentenceSimilarityIITests.swift */,
+				848CF42124166F840064D0D4 /* LC347Tests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -555,6 +560,7 @@
 				8424C86B240BE7FA00118CAA /* LC221.swift */,
 				8424C86F240CD20500118CAA /* LC218.swift */,
 				848CF419241121890064D0D4 /* GetWords.swift */,
+				848CF41F24166F610064D0D4 /* LC347.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -839,6 +845,7 @@
 				84E25EC023D5EA1F00E6DF29 /* SplitArrayLargestSum.swift in Sources */,
 				84E25EC423D8AD0E00E6DF29 /* CourseScheduleIITests.swift in Sources */,
 				84C780F823B99750004F0827 /* ShortestWayToFormString.swift in Sources */,
+				848CF42224166F840064D0D4 /* LC347Tests.swift in Sources */,
 				84E25F0823EF025400E6DF29 /* SubArrays.swift in Sources */,
 				84C7810923BDC7B9004F0827 /* KnightProbability.swift in Sources */,
 				84E25F1723F42F9700E6DF29 /* AlienDictionaryTests.swift in Sources */,
@@ -851,6 +858,7 @@
 				84C7811523BEF603004F0827 /* MaxArea.swift in Sources */,
 				84E25EF923EC4A3700E6DF29 /* EvaluateDivisionTests.swift in Sources */,
 				84C7811923BF811C004F0827 /* AddBoldTag.swift in Sources */,
+				848CF42024166F610064D0D4 /* LC347.swift in Sources */,
 				84E25EB323D35F0300E6DF29 /* ShortestDistanceTests.swift in Sources */,
 				84C780F123B637DF004F0827 /* StudentScoreTests.swift in Sources */,
 				84C780ED23B4E410004F0827 /* SubsequenceTests.swift in Sources */,
