@@ -9,3 +9,4 @@ taylor.observe(\Person.name, options: [.old, .new]) { person, change in
     print("My name changed from \(change.oldValue!) to \(change.newValue!)")
 }
 taylor.name = "Ome"
+5 % 6
