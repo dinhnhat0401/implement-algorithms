@@ -13,17 +13,19 @@ class LC126 {
         var words = Set<String>(wordList)
         words.insert(beginWord)
 
-        var visited = Set<String>([beginWord])
+        var visited = [String: Int]()
+        visited[beginWord] = 0
         var p = [String: String]()
         var frontier = [beginWord]
         var result = [[String]]()
         let g = buildGraph(words)
         var needNextLevel = true
+        var layer = 1
         while frontier.count > 0 {
             var next = [String]()
             for w in frontier {
                 for nextW in findNext(w, g) {
-                    if visited.contains(nextW) {
+                    if visited[nextW, default: -1] > layer {
                         continue
                     }
 
@@ -41,7 +43,7 @@ class LC126 {
                         continue
                     }
 
-                    visited.insert(nextW)
+                    visited[nextW] = layer
                     next.append(nextW)
                     p[nextW] = w
                 }
@@ -49,6 +51,7 @@ class LC126 {
             if !needNextLevel {
                 break
             }
+            layer += 1
             frontier = next
         }
 
