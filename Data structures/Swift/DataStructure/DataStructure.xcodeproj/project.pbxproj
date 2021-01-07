@@ -46,6 +46,8 @@
 		848CF42224166F840064D0D4 /* LC347Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CF42124166F840064D0D4 /* LC347Tests.swift */; };
 		848CF42424178B0A0064D0D4 /* LC1057.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CF42324178B0A0064D0D4 /* LC1057.swift */; };
 		848CF4262417DA590064D0D4 /* LC6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CF4252417DA590064D0D4 /* LC6.swift */; };
+		849DE2172470E24B00C5150F /* FlattenBTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DE2132470E1A200C5150F /* FlattenBTTests.swift */; };
+		849DE2182470E25700C5150F /* FlattenBT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849DE2112470E12A00C5150F /* FlattenBT.swift */; };
 		84B41CCD2467DA9200F59F54 /* LCIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41CCC2467DA9200F59F54 /* LCIS.swift */; };
 		84B41CCF2467DAAF00F59F54 /* LCISTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41CCE2467DAAF00F59F54 /* LCISTests.swift */; };
 		84C6C66023A7BF3C008B6B75 /* ShortestPathInAGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */; };
@@ -166,6 +168,8 @@
 		84EA7BF5239A7F600065CAD0 /* RepeatedDNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF4239A7F600065CAD0 /* RepeatedDNA.swift */; };
 		84EA7BF7239D26720065CAD0 /* FlattenMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF6239D26720065CAD0 /* FlattenMap.swift */; };
 		84EA7BF9239D39EA0065CAD0 /* SymmetricTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */; };
+		84F4634525A75C6000C22ABB /* Jan7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4634425A75C6000C22ABB /* Jan7.swift */; };
+		84F4634725A75C8400C22ABB /* Jan7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4634625A75C8400C22ABB /* Jan7Tests.swift */; };
 		84F55CAF243368D500F06CF2 /* TreeNode236Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F55CAE243368D500F06CF2 /* TreeNode236Tests.swift */; };
 		84F55CB02433695C00F06CF2 /* LC236.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F55CAC2433682800F06CF2 /* LC236.swift */; };
 		84F55CB22438B3A600F06CF2 /* LC126.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F55CB12438B3A600F06CF2 /* LC126.swift */; };
@@ -234,6 +238,8 @@
 		848CF42124166F840064D0D4 /* LC347Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC347Tests.swift; sourceTree = "<group>"; };
 		848CF42324178B0A0064D0D4 /* LC1057.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC1057.swift; sourceTree = "<group>"; };
 		848CF4252417DA590064D0D4 /* LC6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC6.swift; sourceTree = "<group>"; };
+		849DE2112470E12A00C5150F /* FlattenBT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlattenBT.swift; sourceTree = "<group>"; };
+		849DE2132470E1A200C5150F /* FlattenBTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlattenBTTests.swift; sourceTree = "<group>"; };
 		84B41CCC2467DA9200F59F54 /* LCIS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCIS.swift; sourceTree = "<group>"; };
 		84B41CCE2467DAAF00F59F54 /* LCISTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCISTests.swift; sourceTree = "<group>"; };
 		84C6C65F23A7BF3C008B6B75 /* ShortestPathInAGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathInAGrid.swift; sourceTree = "<group>"; };
@@ -354,6 +360,8 @@
 		84EA7BF4239A7F600065CAD0 /* RepeatedDNA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedDNA.swift; sourceTree = "<group>"; };
 		84EA7BF6239D26720065CAD0 /* FlattenMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlattenMap.swift; sourceTree = "<group>"; };
 		84EA7BF8239D39EA0065CAD0 /* SymmetricTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricTree.swift; sourceTree = "<group>"; };
+		84F4634425A75C6000C22ABB /* Jan7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jan7.swift; sourceTree = "<group>"; };
+		84F4634625A75C8400C22ABB /* Jan7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jan7Tests.swift; sourceTree = "<group>"; };
 		84F55CAC2433682800F06CF2 /* LC236.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC236.swift; sourceTree = "<group>"; };
 		84F55CAE243368D500F06CF2 /* TreeNode236Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode236Tests.swift; sourceTree = "<group>"; };
 		84F55CB12438B3A600F06CF2 /* LC126.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC126.swift; sourceTree = "<group>"; };
@@ -497,6 +505,8 @@
 				84F55CB32438B3CD00F06CF2 /* LC126Tests.swift */,
 				8472A76E2462A4C900DFCCD0 /* FindAnagramsTests.swift */,
 				84B41CCE2467DAAF00F59F54 /* LCISTests.swift */,
+				849DE2132470E1A200C5150F /* FlattenBTTests.swift */,
+				84F4634625A75C8400C22ABB /* Jan7Tests.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -533,6 +543,7 @@
 		84EA7BC8238132880065CAD0 /* Leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				84F4634425A75C6000C22ABB /* Jan7.swift */,
 				84B41CCC2467DA9200F59F54 /* LCIS.swift */,
 				84C780E723B10019004F0827 /* Backtracking */,
 				FE56D3B723AB574800B41018 /* WordLadder.swift */,
@@ -615,6 +626,7 @@
 				84F55CB12438B3A600F06CF2 /* LC126.swift */,
 				8472A76C2462A4A300DFCCD0 /* FindAnagrams.swift */,
 				8472A770246449CA00DFCCD0 /* LC317.swift */,
+				849DE2112470E12A00C5150F /* FlattenBT.swift */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
@@ -820,6 +832,7 @@
 				8439910B2402C61800ED551A /* LRUCache.swift in Sources */,
 				84EA7BEF23967F3D0065CAD0 /* KMP.swift in Sources */,
 				841D4761238038330044534B /* SceneDelegate.swift in Sources */,
+				849DE2182470E25700C5150F /* FlattenBT.swift in Sources */,
 				FE56D3B823AB574900B41018 /* WordLadder.swift in Sources */,
 				8472A76D2462A4A300DFCCD0 /* FindAnagrams.swift in Sources */,
 				84E25EE923E05AB300E6DF29 /* MinDifficulty.swift in Sources */,
@@ -831,6 +844,7 @@
 				84E25F0E23F3056100E6DF29 /* ValidTree.swift in Sources */,
 				84EA7BD8238A99C20065CAD0 /* InvertBinaryTree.swift in Sources */,
 				84E25F0423EED9D600E6DF29 /* CanFinish.swift in Sources */,
+				84F4634525A75C6000C22ABB /* Jan7.swift in Sources */,
 				84EA7BE62393AD8A0065CAD0 /* LengthOfLongestSubstring.swift in Sources */,
 				84E25F0C23F18B0200E6DF29 /* Logger.swift in Sources */,
 				84F55CB22438B3A600F06CF2 /* LC126.swift in Sources */,
@@ -922,10 +936,12 @@
 				841E49EF241E6C560009F4D6 /* SearchMatrixTests.swift in Sources */,
 				84C7810F23BDE724004F0827 /* IslandPerimeterTests.swift in Sources */,
 				8439910C2402C64500ED551A /* LRUCacheTests.swift in Sources */,
+				849DE2172470E24B00C5150F /* FlattenBTTests.swift in Sources */,
 				84C780E023AF2A46004F0827 /* NumberOfIsland2Test.swift in Sources */,
 				84E25EDC23DDD53900E6DF29 /* KthLargestElementInArrayTests.swift in Sources */,
 				84E25F1523F42F8100E6DF29 /* AlienDictionary.swift in Sources */,
 				84C7811523BEF603004F0827 /* MaxArea.swift in Sources */,
+				84F4634725A75C8400C22ABB /* Jan7Tests.swift in Sources */,
 				84E25EF923EC4A3700E6DF29 /* EvaluateDivisionTests.swift in Sources */,
 				8472A76F2462A4C900DFCCD0 /* FindAnagramsTests.swift in Sources */,
 				84C7811923BF811C004F0827 /* AddBoldTag.swift in Sources */,
